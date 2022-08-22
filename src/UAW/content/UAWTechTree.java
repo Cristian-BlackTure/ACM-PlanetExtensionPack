@@ -125,7 +125,7 @@ public class UAWTechTree {
 						)
 					);
 					// Sniper Tree
-					node(ashlock, () ->
+					node(zper, () ->
 						node(longbow,
 							Seq.with(
 								new Research(fuse)
