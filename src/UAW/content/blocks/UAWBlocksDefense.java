@@ -33,7 +33,7 @@ public class UAWBlocksDefense {
 	// Gatling
 	quadra, spitfire, equalizer,
 	// Sniper/Railgun
-	ashlock, longbow, deadeye,
+	zper, longbow, deadeye,
 	// Shotcannon
 	buckshot, tempest, strikeforce,
 	// Artillery
@@ -291,13 +291,13 @@ public class UAWBlocksDefense {
 			}};
 		}};
 
-		ashlock = new ItemTurret("ashlock") {{
+	        zper = new ItemTurret("zper") {{
 			requirements(Category.turret, with(
 				Items.copper, 150,
 				Items.graphite, 100,
 				Items.titanium, 50
 			));
-			size = 2;
+			size = 3;
 			scaledHealth = 250;
 
 			reload = 1.75f * tick;
