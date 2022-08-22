@@ -148,7 +148,7 @@ public class UAWTechTree {
 								new Research(cyclone)
 							)
 						);
-						node(strikeforce,
+						node(hd22,
 							Seq.with(
 								new Research(ripple)
 							)
