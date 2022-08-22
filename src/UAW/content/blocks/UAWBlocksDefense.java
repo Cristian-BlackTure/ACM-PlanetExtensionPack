@@ -35,7 +35,7 @@ public class UAWBlocksDefense {
 	// Sniper/Railgun
 	zper, longbow, deadeye,
 	// Shotcannon
-	buckshot, tempest, strikeforce,
+	buckshot, tempest, hd22,
 	// Artillery
 	zounderkite, skyhammer,
 	// Energy
@@ -906,7 +906,7 @@ public class UAWBlocksDefense {
 				);
 			}};
 		}};
-		strikeforce = new ItemTurret("strikeforce") {{
+		hd22 = new ItemTurret("hd22") {{
 			requirements(Category.turret, with(
 				Items.titanium, 350,
 				Items.graphite, 300,
