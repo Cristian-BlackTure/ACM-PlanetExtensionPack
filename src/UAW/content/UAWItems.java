@@ -21,7 +21,7 @@ public class UAWItems {
 		compositeAlloy = new Item("item-composite-alloy", UAWPal.compAlloyMid) {{
 			cost = 2.5f;
 		}};
-	        mm = new Item("item-mm", Color.valueOf("272727")) {{
+	        mm = new Item("item-mm", Color.valueOf("ffffff")) {{
 			flammability = 90.1f;
 			explosiveness = 90.25f;
 			hardness = 4;
