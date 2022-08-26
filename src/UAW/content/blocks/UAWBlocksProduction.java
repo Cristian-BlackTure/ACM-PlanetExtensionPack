@@ -22,7 +22,7 @@ import static mindustry.type.ItemStack.with;
 public class UAWBlocksProduction {
 	public static Block placeholder,
 	// production
-	uporedrill;
+	uporedrill, maxdrill;
 
 	public static void load() {
 
