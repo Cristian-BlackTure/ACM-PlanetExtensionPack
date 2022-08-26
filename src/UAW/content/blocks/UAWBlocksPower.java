@@ -1,5 +1,4 @@
 package UAW.content.blocks;
-package mindustry.audio;
 
 import UAW.content.UAWLiquids;
 import UAW.content.UAWItems;
