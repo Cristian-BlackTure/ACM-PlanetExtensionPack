@@ -18,5 +18,12 @@ public class UAWLiquids {
 			temperature = 0.6f;
 			effect = StatusEffects.wet;
 		}};
+		plasma = new Liquid("plasma") {{
+			gas = true;
+			alwaysUnlocked = true;
+			explosiveness = 0f;
+			temperature = 0.6f;
+			effect = StatusEffects.burning;
+		}};
 	}
 }
