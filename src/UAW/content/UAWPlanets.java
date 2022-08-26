@@ -15,7 +15,7 @@ import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
 
-public class Planets{
+class Planets{
     public static Planet
     sun,
     bl;
