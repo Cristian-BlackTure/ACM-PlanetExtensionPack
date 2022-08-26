@@ -25,16 +25,13 @@ public class UAWBlocksPower {
 	public static void load() {
 
         MGenerator = new ConsumeGenerator("m-generator"){{
-            requirements(Category.power, with(Items.copper, 35, UAWItems.mm, 25, Items.lead, 40, Items.silicon, 30));
+            requirements(Category.power, with(Items.copper, 35, Items.graphite, 25, Items.lead, 40, Items.silicon, 30));
             powerProduction = 10.5f;
             itemDuration = 90f;
             consumeLiquid(Liquids.water, 0.4f);
             hasLiquids = true;
             size = 2;
             generateEffect = Fx.generatespark;
-
-            ambientSound = Sounds.smelter;
-            ambientSoundVolume = 0.06f;
 
             consume(new ConsumeItemFlammable());
             consume(new ConsumeItemExplode());
