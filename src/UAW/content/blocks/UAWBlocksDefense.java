@@ -94,7 +94,7 @@ public class UAWBlocksDefense {
 					ammoMultiplier = 3;
 					trailLengthScale = 0.6f;
 				}},
-				Items.pyratite, new BasicBulletType(5f, 15) {{
+				Items.pyratite, new LaserBulletType(5f, 15) {{
 					height = 12f;
 					width = 8f;
 					frontColor = Pal.lightishOrange;
