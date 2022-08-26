@@ -40,7 +40,7 @@ public class UAWBlocksProduction {
         }};
 
         maxdrill = new BurstDrill("maxdrill"){{
-            requirements(Category.production, with(Items.silicon, 200, Items.mm, 20, Items.tungsten, 200, Items.thorium, 120));
+            requirements(Category.production, with(Items.silicon, 200, UAWItems.mm, 20, Items.tungsten, 200, Items.thorium, 120));
             drillTime = 60f * 6f;
             size = 5;
             hasPower = true;
