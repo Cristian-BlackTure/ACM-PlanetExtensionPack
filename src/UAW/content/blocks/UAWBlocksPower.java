@@ -1,4 +1,5 @@
 package UAW.content.blocks;
+package mindustry.audio;
 
 import UAW.content.UAWLiquids;
 import UAW.content.UAWItems;
@@ -12,31 +13,22 @@ import mindustry.world.blocks.production.AttributeCrafter;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.Attribute;
-import arc.graphics.*;
-import arc.graphics.g2d.*;
+import arc.*;
+import arc.audio.*;
+import arc.audio.Filters.*;
+import arc.files.*;
 import arc.math.*;
 import arc.math.geom.*;
 import arc.struct.*;
 import arc.util.*;
-import mindustry.ai.*;
-import mindustry.ai.types.*;
-import mindustry.annotations.Annotations.*;
-import mindustry.entities.*;
-import mindustry.entities.abilities.*;
-import mindustry.entities.bullet.*;
-import mindustry.entities.effect.*;
-import mindustry.entities.part.*;
-import mindustry.entities.pattern.*;
+import mindustry.*;
+import mindustry.content.*;
+import mindustry.game.EventType.*;
 import mindustry.gen.*;
-import mindustry.graphics.*;
-import mindustry.type.*;
-import mindustry.type.ammo.*;
-import mindustry.type.unit.*;
-import mindustry.type.weapons.*;
-import mindustry.world.meta.*;
 
 import static UAW.Vars.*;
 import static mindustry.type.ItemStack.with;
+import static mindustry.Vars.*;
 
 /** Contains Power Blocks or Blocks that produces Power */
 public class UAWBlocksPower {
