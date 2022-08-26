@@ -108,13 +108,9 @@ public class UAWBlocksPower {
             explosionRadius = 10;
             explosionDamage = 5000;
             explodeEffect = new MultiEffect(Fx.bigShockwave, new WrapEffect(Fx.titanSmoke, Liquids.neoplasm.color), Fx.neoplasmSplat);
-            explodeSound = Sounds.largeExplosion;
 
             powerProduction = 260f;
-            rebuildable = false;
-
-            ambientSound = Sounds.bioLoop;
-            ambientSoundVolume = 0.2f;
+            rebuildable = false
 
             explosionPuddles = 80;
             explosionPuddleRange = tilesize * 7f;
