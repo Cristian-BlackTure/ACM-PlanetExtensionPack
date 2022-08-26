@@ -105,7 +105,7 @@ public class UAWBlocksPower {
             itemDuration = 60f * 3f;
             itemCapacity = 10;
 
-            explosionRadius = 10;
+            explosionRadius = 45;
             explosionDamage = 5000;
             explodeEffect = new MultiEffect(Fx.bigShockwave, new WrapEffect(Fx.titanSmoke, Liquids.neoplasm.color), Fx.neoplasmSplat);
 
