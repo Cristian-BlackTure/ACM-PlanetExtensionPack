@@ -12,6 +12,7 @@ import mindustry.world.blocks.production.AttributeCrafter;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.Attribute;
+import mindustry.arc;
 
 import static UAW.Vars.*;
 import static mindustry.type.ItemStack.with;
@@ -53,9 +54,9 @@ public class UAWBlocksPower {
         }};
 
         plasmareactor = new HeaterGenerator("plasmareactor"){{
-            requirements(Category.power, with(Items.silicon, 500, Items.phaseFabric, 300, Items.surgeAlloy, 200));
+            requirements(Category.power, with(Items.silicon, 500));
 
-            size = 5;
+            size = 3;
             liquidCapacity = 80f;
             outputLiquid = new LiquidStack(UAWLiquids.plasma, 20f / 60f);
             explodeOnFull = true;
