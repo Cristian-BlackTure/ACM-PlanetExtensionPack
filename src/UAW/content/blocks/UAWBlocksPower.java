@@ -110,7 +110,7 @@ public class UAWBlocksPower {
             explodeEffect = new MultiEffect(Fx.bigShockwave, new WrapEffect(Fx.titanSmoke, Liquids.neoplasm.color), Fx.neoplasmSplat);
 
             powerProduction = 260f;
-            rebuildable = false
+            rebuildable = false;
 
             explosionPuddles = 80;
             explosionPuddleRange = tilesize * 7f;
