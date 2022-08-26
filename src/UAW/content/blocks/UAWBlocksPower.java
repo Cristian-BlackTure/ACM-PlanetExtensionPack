@@ -20,13 +20,7 @@ public class UAWBlocksPower {
 	public static Block placeholder,
 
 	// Turbines
-	steamTurbine, advancedSteamTurbine,
-
-	// Steam Production
-	steamKettle, industrialBoiler, pressureBoiler, geothermalBoiler,
-
-	// Heat Generation
-	coalBurner, vapourHeater, LPGHeater, 
+	MGenerator;
 
 	public static void load() {
 
