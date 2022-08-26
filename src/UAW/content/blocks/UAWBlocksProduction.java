@@ -39,5 +39,32 @@ public class UAWBlocksProduction {
 
         }};
 
+        maxdrill = new BurstDrill("maxdrill"){{
+            requirements(Category.production, with(Items.silicon, 200, Items.mm, 20, Items.tungsten, 200, Items.thorium, 120));
+            drillTime = 60f * 6f;
+            size = 5;
+            hasPower = true;
+            tier = 7;
+            //TODO better effect
+            drillEffect = new MultiEffect(
+                Fx.mineImpact,
+                Fx.drillSteam,
+                Fx.dynamicSpikes.wrap(Liquids.hydrogen.color, 30f),
+                Fx.mineImpactWave.wrap(Liquids.hydrogen.color, 45f)
+            );
+            shake = 4f;
+            itemCapacity = 50;
+            arrowOffset = 2f;
+            arrowSpacing = 5f;
+            arrows = 2;
+            glowColor.a = 0.6f;
+            fogRadius = 5;
+
+            drillMultipliers.put(Items.mm, 2.5f);
+
+            //TODO different 
+            consumePower(5f);
+        }};
+
 	}
 }
