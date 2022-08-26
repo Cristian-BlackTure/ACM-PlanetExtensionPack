@@ -60,7 +60,6 @@ public class UAWBlocksProduction {
             glowColor.a = 0.6f;
             fogRadius = 5;
 
-            drillMultipliers.put(Items.mm, 2.5f);
 
             //TODO different 
             consumePower(5f);
