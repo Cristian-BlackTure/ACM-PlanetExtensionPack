@@ -7,7 +7,7 @@ import mindustry.type.Liquid;
 public class UAWLiquids {
 	public static Liquid placeholder,
 	// Gas
-	steam;
+	steam, plasma;
 
 	public static void load() {
 
