@@ -6,7 +6,7 @@ import mindustry.type.Item;
 
 public class UAWItems {
 	public static Item placeholder,
-		cryogel, anthracite, compositeAlloy, dieselCore;
+		cryogel, anthracite, compositeAlloy, dieselCore, mm;
 
 	public static void load() {
 		cryogel = new Item("item-cryogel", Color.valueOf("87ceeb")) {{
@@ -19,6 +19,9 @@ public class UAWItems {
 			hardness = 4;
 		}};
 		compositeAlloy = new Item("item-composite-alloy", UAWPal.compAlloyMid) {{
+			cost = 2.5f;
+		}};
+		mm = new Item("item-mm", UAWPal.compAlloyMid) {{
 			cost = 2.5f;
 		}};
 
