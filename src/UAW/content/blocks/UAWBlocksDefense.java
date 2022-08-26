@@ -31,7 +31,7 @@ import static mindustry.type.ItemStack.with;
 public class UAWBlocksDefense {
 	public static Block placeholder,
 	// Testing
-	javatest
+	javatest;
 
 	public static void load() {
 
