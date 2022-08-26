@@ -1,7 +1,7 @@
 
 
 const abcde = new JavaAdapter(Planet, {}, "abcde", Planets.sun, 4, 1);
-abcde.generator = new SerpuloPlanetGenerator();
+abcde.generator = new ErekirPlanetGenerator();
 abcde.mesh = new HexMesh(abcde, 5);
   abcde.orbitRadius = 100;
     abcde.orbitTime = 1500;
