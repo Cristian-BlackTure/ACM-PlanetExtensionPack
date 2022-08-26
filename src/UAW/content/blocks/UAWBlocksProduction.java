@@ -37,7 +37,6 @@ public class UAWBlocksProduction {
             fogRadius = 3;
             researchCost = with(Items.beryllium, 10);
 
-            consumeLiquid(Liquids.plasma, 0.25f / 60f).boost();
         }};
 
 	}
