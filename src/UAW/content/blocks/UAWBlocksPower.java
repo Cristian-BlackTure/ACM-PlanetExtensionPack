@@ -1,6 +1,7 @@
 package UAW.content.blocks;
 
 import UAW.content.UAWLiquids;
+import UAW.content.UAWItems;
 import UAW.world.blocks.power.steam.LiquidBoiler;
 import UAW.world.drawer.DrawBoilerSmoke;
 import mindustry.content.*;
@@ -19,8 +20,8 @@ import static mindustry.type.ItemStack.with;
 public class UAWBlocksPower {
 	public static Block placeholder,
 
-	// Turbines
-	MGenerator;
+	// Power
+	MGenerator, plasmareactor;
 
 	public static void load() {
 
@@ -48,6 +49,71 @@ public class UAWBlocksPower {
             }},
             new DrawRegion("-cap"),
             new DrawLiquidRegion()
+            );
+        }};
+
+        plasmareactor = new HeaterGenerator("plasmareactor"){{
+            requirements(Category.power, with(Items.silicon, 500, Items.phaseFabric, 300, Items.surgeAlloy, 200));
+
+            size = 5;
+            liquidCapacity = 80f;
+            outputLiquid = new LiquidStack(UAWLiquids.plasma, 20f / 60f);
+            explodeOnFull = true;
+
+            heatOutput = 60f;
+
+            consumeLiquid(Liquids.slag, 10f / 60f);
+            consumeLiquid(Liquids.water, 10f / 60f);
+            consumeItem(UAWItems.mm); 
+
+            itemDuration = 60f * 3f;
+            itemCapacity = 10;
+
+            explosionRadius = 10;
+            explosionDamage = 5000;
+            explodeEffect = new MultiEffect(Fx.bigShockwave, new WrapEffect(Fx.titanSmoke, Liquids.neoplasm.color), Fx.neoplasmSplat);
+            explodeSound = Sounds.largeExplosion;
+
+            powerProduction = 260f;
+            rebuildable = false;
+
+            ambientSound = Sounds.bioLoop;
+            ambientSoundVolume = 0.2f;
+
+            explosionPuddles = 80;
+            explosionPuddleRange = tilesize * 7f;
+            explosionPuddleLiquid = UAWLiquids.plasma;
+            explosionPuddleAmount = 200f;
+            explosionMinWarmup = 0.5f;
+
+            consumeEffect = new RadialEffect(Fx.neoplasiaSmoke, 4, 90f, 54f / 4f);
+
+            drawer = new DrawMulti(
+            new DrawRegion("-bottom"),
+            new DrawLiquidTile(Liquids.slag, 3f),
+            new DrawCircles(){{
+                color = Color.valueOf("feb380").a(0.8f);
+                strokeMax = 3.25f;
+                radius = 65f / 4f;
+                amount = 5;
+                timeScl = 200f;
+            }},
+
+            new DrawRegion("-center"),
+
+            new DrawCells(){{
+                color = Color.valueOf("c33e2b");
+                particleColorFrom = Color.valueOf("e8803f");
+                particleColorTo = Color.valueOf("8c1225");
+                particles = 50;
+                range = 4f;
+            }},
+            new DrawDefault(),
+            new DrawHeatOutput(),
+            new DrawGlowRegion("-glow"){{
+                color = Color.valueOf("70170b");
+                alpha = 0.7f;
+            }}
             );
         }};
 
