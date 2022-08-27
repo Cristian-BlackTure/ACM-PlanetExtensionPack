@@ -6,6 +6,8 @@ import UAW.content.blocks.*;
 import arc.Events;
 import mindustry.game.EventType.FileTreeInitEvent;
 import mindustry.mod.Mod;
+import UAW.content.planet.*;
+
 
 public class UAWModLoader extends Mod {
 	public UAWModLoader() {
@@ -28,7 +30,12 @@ public class UAWModLoader extends Mod {
 		UAWItems.load();
 		UAWLiquids.load();
 		UAWBlockContent();
-                Planets.load();
+
+	}
+
+	@Override
+	public void loadPlanetContent() {
+		UAWPlanets();
 
 	}
 }
