@@ -1,4 +1,4 @@
-package abyss.planets;
+package UAW.planets;
 
 import arc.graphics.Color;
 import arc.math.*;
