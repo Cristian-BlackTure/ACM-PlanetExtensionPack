@@ -19,7 +19,7 @@ import mindustry.content.*;
 public class UAWPlanets{
     public static Planet
     sun,
-    erekir,
+    planetbl,
     tantros,
     serpulo,
     gier,
@@ -44,7 +44,7 @@ public class UAWPlanets{
             );
         }};
 
-        erekir = new Planet("erekir", sun, 1f, 2){{
+        planetbl = new Planet("planetbl", sun, 1f, 2){{
             generator = new ErekirPlanetGenerator();
             meshLoader = () -> new HexMesh(this, 5);
             cloudMeshLoader = () -> new MultiMesh(
