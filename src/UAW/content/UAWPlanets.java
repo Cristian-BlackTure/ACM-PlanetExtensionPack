@@ -11,7 +11,7 @@ public class UAWPlanets implements ContentList {
 	public static Planet vekt;
 
 	@Override
-	public void load() {
+	public static void load() {
 		vekt = new Planet("vekt", Planets.sun, 3, 1) {{
 			generator = new ErekirPlanetGenerator();
 			meshLoader = () -> new HexMesh(this, 6);
