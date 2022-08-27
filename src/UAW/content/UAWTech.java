@@ -12,7 +12,7 @@ import mindustry.game.Objectives.*;
 import static mindustry.content.Blocks.*;
 import static mindustry.type.ItemStack.with;
 
-import static UAW.content.blocks.UAWBlocksDefense*;
+import static UAW.content.blocks.UAWBlocksDefense.*;
 
 public static class UAWTechTree{
     private static TechNode context = null;
@@ -21,5 +21,5 @@ public static class UAWTechTree{
         
                attachNode(lancer, () -> {
         	node(plasmic);
-    }
+    })
     }
