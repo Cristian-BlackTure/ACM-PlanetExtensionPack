@@ -86,7 +86,7 @@ public class UAWPlanets{
         }};
 
         //TODO names
-        gier = makeAsteroid("gier", erekir, Blocks.ferricStoneWall, Blocks.carbonWall, 0.4f, 7, 1f, gen -> {
+        gier = makeAsteroid("gier", planetbl, Blocks.ferricStoneWall, Blocks.carbonWall, 0.4f, 7, 1f, gen -> {
             gen.min = 25;
             gen.max = 35;
             gen.carbonChance = 0.6f;
@@ -158,7 +158,7 @@ public class UAWPlanets{
 
         //define launch candidates after all planets initialize
         //TODO how will it use the nucleus???
-        serpulo.launchCandidates.add(erekir);
+        serpulo.launchCandidates.add(planetbl);
     }
 
     private static Planet makeAsteroid(String name, Planet parent, Block base, Block tint, float tintThresh, int pieces, float scale, Cons<AsteroidGenerator> cgen){
