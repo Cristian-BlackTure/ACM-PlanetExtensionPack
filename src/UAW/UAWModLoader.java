@@ -7,7 +7,6 @@ import arc.Events;
 import mindustry.game.EventType.FileTreeInitEvent;
 import mindustry.mod.Mod;
 
-
 public class UAWModLoader extends Mod {
 	public UAWModLoader() {
 		Events.on(FileTreeInitEvent.class, e -> Sfx.load());
@@ -19,9 +18,11 @@ public class UAWModLoader extends Mod {
 		UAWBlocksLogistic.load();
 		UAWBlocksProduction.load();
 		UAWBlocksUnits.load();
+        UAWPlanets.load();
+        UAWEnv.load();
 	}
 
-        @Override
+	@Override
 	public void loadContent() {
 		UAWStatusEffects.load();
 		UAWBullets.load();
@@ -29,7 +30,7 @@ public class UAWModLoader extends Mod {
 		UAWItems.load();
 		UAWLiquids.load();
 		UAWBlockContent();
-                UAWPlanets.load();
-       }
+        UAWTech.load();
 
+	}
 }
