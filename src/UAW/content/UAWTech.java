@@ -21,5 +21,5 @@ public static class UAWTechTree{
         
                attachNode(lancer, () -> {
         	node(plasmic);
-    })
+    });
     }
