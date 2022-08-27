@@ -15,10 +15,7 @@ public class UAWPlanets{
 		vekt = new Planet("vekt", Planets.sun, 3, 1) {{
 			generator = new GalemitePlanetGenerator();
 			meshLoader = () -> new HexMesh(this, 6);
-			atmosphereColor = Color.valueOf("3c1b8f");
-			atmosphereRadIn = 0.02f;
-			atmosphereRadOut = 0.3f;
-			startSector = 15;
+			startSector = 30;
 			alwaysUnlocked = true;
 		}};
 	}
