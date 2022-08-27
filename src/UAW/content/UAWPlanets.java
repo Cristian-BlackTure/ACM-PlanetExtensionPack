@@ -1,14 +1,14 @@
 package UAW.content; 
   
- import arc.graphics.*; 
- import mindustry.ctype.*; 
- import mindustry.content.*; 
- import mindustry.graphics.g3d.*; 
- import mindustry.maps.planet.*; 
- import mindustry.type.*; 
- import UAW.planets.*; 
+import arc.graphics.*; 
+import mindustry.ctype.*; 
+import mindustry.content.*; 
+import mindustry.graphics.g3d.*; 
+import mindustry.maps.planet.*; 
+import mindustry.type.*; 
+import UAW.planets.*; 
   
- public class UAWPlanets implements ContentList { 
+public class UAWPlanets implements ContentList { 
          public static Planet planetbl; 
   
          @Override 
