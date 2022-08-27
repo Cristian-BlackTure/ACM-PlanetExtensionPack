@@ -21,7 +21,7 @@ public class UAWPlanets{
     sun,
     planetbl,
     tantros,
-    serpulo,
+    planeta1,
     gier,
     notva,
     verilus;
@@ -116,7 +116,7 @@ public class UAWPlanets{
         }};
 
         //TODO hide beryllium and others on load in rules
-        serpulo = new Planet("serpulo", sun, 1f, 3){{
+        planeta1 = new Planet("planeta1", sun, 1f, 3){{
             generator = new SerpuloPlanetGenerator();
             meshLoader = () -> new HexMesh(this, 6);
             cloudMeshLoader = () -> new MultiMesh(
@@ -158,7 +158,7 @@ public class UAWPlanets{
 
         //define launch candidates after all planets initialize
         //TODO how will it use the nucleus???
-        serpulo.launchCandidates.add(planetbl);
+        planeta1.launchCandidates.add(planetbl);
     }
 
     private static Planet makeAsteroid(String name, Planet parent, Block base, Block tint, float tintThresh, int pieces, float scale, Cons<AsteroidGenerator> cgen){
