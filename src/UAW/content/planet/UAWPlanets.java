@@ -1,4 +1,4 @@
-package mindustry.content;
+package UAW.content.planet;
 
 import arc.func.*;
 import arc.graphics.*;
