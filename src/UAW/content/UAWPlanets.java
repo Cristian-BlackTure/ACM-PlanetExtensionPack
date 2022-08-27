@@ -16,7 +16,7 @@ import mindustry.world.*;
 import mindustry.world.meta.*;
 import mindustry.content.*;
 
-public class UAWPlanets{
+public class UAWPlanet{
     public static Planet
     sun,
     erekir,
