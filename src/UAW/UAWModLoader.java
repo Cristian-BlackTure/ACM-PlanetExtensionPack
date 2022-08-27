@@ -22,7 +22,7 @@ public class UAWModLoader extends Mod {
 		UAWBlocksUnits.load();
 	}
 
-	@Override
+        @Override
 	public void loadContent() {
 		UAWStatusEffects.load();
 		UAWBullets.load();
@@ -34,7 +34,6 @@ public class UAWModLoader extends Mod {
 
 	}
 
-	@Override
 	public void loadPlanetContent() {
 		UAWPlanets();
 
