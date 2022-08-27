@@ -53,5 +53,5 @@ public class UAWPlanets{
             landCloudColor = Pal.spore.cpy().a(0.5f);
             hiddenItems.addAll(Items.erekirItems).removeAll(Items.serpuloItems);
         }};
-       
     }
+}
