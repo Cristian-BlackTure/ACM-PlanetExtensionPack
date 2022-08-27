@@ -6,7 +6,6 @@ import mindustry.content.*;
 import mindustry.graphics.g3d.*; 
 import mindustry.maps.planet.*; 
 import mindustry.type.*; 
-import UAW.planets.*; 
   
 public class UAWPlanets implements ContentList { 
          public static Planet planetbl; 
