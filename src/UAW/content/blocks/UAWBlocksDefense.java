@@ -38,7 +38,7 @@ public class UAWBlocksDefense {
 		//region Serpulo
         
          plasmic = new LaserTurret("plasmic"){{
-           requirements(Category.turret, with(silicon, 200))
+           requirements(Category.turret, with(silicon, 200));
             recoilAmount = 3.7f;
             shootType = LaserBulletType;
             update = true;
