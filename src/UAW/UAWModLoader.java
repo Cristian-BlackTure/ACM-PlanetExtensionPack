@@ -30,6 +30,7 @@ public class UAWModLoader extends Mod {
 		UAWItems.load();
 		UAWLiquids.load();
 		UAWBlockContent();
+                UAWPlanetContent();
 
 	}
 
