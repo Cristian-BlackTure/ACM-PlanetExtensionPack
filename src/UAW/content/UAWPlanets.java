@@ -7,10 +7,9 @@ import mindustry.graphics.g3d.*;
 import mindustry.maps.planet.*;
 import mindustry.type.*;
 
-public class UAWPlanets implements ContentList {
+public class UAWPlanets{
 	public static Planet vekt;
 
-	@Override
 	public static void load() {
 		vekt = new Planet("vekt", Planets.sun, 3, 1) {{
 			generator = new ErekirPlanetGenerator();
