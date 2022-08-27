@@ -1,4 +1,4 @@
-package UAW.content.planet;
+package UAW.content;
 
 import arc.func.*;
 import arc.graphics.*;
