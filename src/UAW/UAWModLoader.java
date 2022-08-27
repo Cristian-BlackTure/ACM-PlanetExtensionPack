@@ -5,7 +5,7 @@ import UAW.content.*;
 import UAW.content.blocks.*;
 import arc.Events;
 import mindustry.game.EventType.FileTreeInitEvent;
-import mindustry.mod.Mod
+import mindustry.mod.Mod;
 import UAW.content.UAWPlanets;
 
 public class UAWModLoader extends Mod {
