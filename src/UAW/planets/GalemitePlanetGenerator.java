@@ -27,7 +27,7 @@ import UAW.content.blocks.*;
 
 import static mindustry.Vars.*;
 
-public class GalemitePlanetGenerator extends ErekirPlanetGenerator {
+public class GalemitePlanetGenerator extends PlanetGenerator {
 	public GalemitePlanetGenerator() {
 	}
 
