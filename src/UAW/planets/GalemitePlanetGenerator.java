@@ -23,6 +23,7 @@ import mindustry.content.*;
 import mindustry.graphics.g3d.PlanetGrid.*;
 import mindustry.maps.generators.*;
 import mindustry.type.*;
+import UAW.content.blocks.*;
 
 import static mindustry.Vars.*;
 
@@ -37,7 +38,7 @@ public class GalemitePlanetGenerator extends SerpuloPlanetGenerator {
 
 	public Block[][] arr =
     {
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
+    {Blocks.sand, Blocks.water},
     {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
     {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
     {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
