@@ -38,15 +38,18 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
 
 	public Block[][] arr =
     {
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice}
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice}
 
 
     };
