@@ -5,7 +5,7 @@ import mindustry.type.*;
 
 import UAW.planets.*;
 import mindustry.content.Planets.*;
-import UAW.content.UAWPlanets;
+import static UAW.content.UAWPlanets.*;
 
 public class UAWSectors{
     public static SectorPreset
