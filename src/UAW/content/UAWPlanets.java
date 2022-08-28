@@ -15,6 +15,7 @@ import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
 import mindustry.content.*;
+import mindustry.content.blocks;
 import UAW.planets.*;
 
 public class UAWPlanets{
