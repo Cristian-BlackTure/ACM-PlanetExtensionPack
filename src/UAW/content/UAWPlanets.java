@@ -19,10 +19,10 @@ import UAW.planets.*;
 
 public class UAWPlanets{
     public static Planet
-    vekt;
+    vertal;
 
     public static void load(){
-               vekt = new Planet("vekt", Planets.sun, 1f, 3){{
+               vertal = new Planet("vertal", Planets.sun, 1f, 3){{
             generator = new GalemitePlanetGenerator();
             meshLoader = () -> new HexMesh(this, 6);
             cloudMeshLoader = () -> new MultiMesh(
@@ -52,7 +52,7 @@ public class UAWPlanets{
             startSector = 15;
             alwaysUnlocked = true;
             landCloudColor = Pal.spore.cpy().a(0.5f);
-            hiddenItems.addAll(Items.erekirItems).removeAll(Items.serpuloItems);
+            hiddenItems.addAll(Items.erekirItems).removeAll(Items.vertalItems);
         }};
     }
 }
