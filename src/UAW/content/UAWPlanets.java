@@ -20,10 +20,10 @@ import UAW.planets.*;
 
 public class UAWPlanets{
     public static Planet
-    tryna;
+    tyra;
 
     public static void load(){
-               tryna = new Planet("tryna", Planets.sun, 1f, 3){{
+               tyra = new Planet("tyra", Planets.sun, 1f, 3){{
             generator = new GalemitePlanetGenerator();
             meshLoader = () -> new HexMesh(this, 6);
             cloudMeshLoader = () -> new MultiMesh(
