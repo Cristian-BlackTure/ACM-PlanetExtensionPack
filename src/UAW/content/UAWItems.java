@@ -6,6 +6,7 @@ import mindustry.type.Item;
 
 public class UAWItems {
 	public static Item placeholder,
+                //vertal
 		cryogel, anthracite, compositeAlloy, dieselCore, mm;
 
 	public static void load() {
