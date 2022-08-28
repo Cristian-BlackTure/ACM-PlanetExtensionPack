@@ -14,7 +14,6 @@ public class UAWModLoader extends Mod {
 
 	public void UAWBlockContent() {
 		UAWBlocksPower.load();
-		UAWBlocksDefense.load();
 		UAWBlocksLogistic.load();
 		UAWBlocksProduction.load();
 		UAWBlocksUnits.load();
@@ -29,7 +28,6 @@ public class UAWModLoader extends Mod {
 		UAWItems.load();
 		UAWLiquids.load();
 		UAWBlockContent();
-        UAWTech.load();
 
 	}
 }
