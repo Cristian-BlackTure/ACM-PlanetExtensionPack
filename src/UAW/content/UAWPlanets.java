@@ -26,7 +26,6 @@ public class UAWPlanets{
                tryna = new Planet("tryna", Planets.sun, 1f, 3){{
             generator = new GalemitePlanetGenerator();
             meshLoader = () -> new HexMesh(this, 6);
-            DefaultCore = blocks.core-bastion;
             cloudMeshLoader = () -> new MultiMesh(
                 new HexSkyMesh(this, 11, 0.15f, 0.13f, 5, new Color().set(Pal.spore).mul(0.9f).a(0.75f), 2, 0.45f, 0.9f, 0.38f),
                 new HexSkyMesh(this, 1, 0.6f, 0.16f, 5, Color.white.cpy().lerp(Pal.spore, 0.55f).a(0.75f), 2, 0.45f, 1f, 0.41f)
