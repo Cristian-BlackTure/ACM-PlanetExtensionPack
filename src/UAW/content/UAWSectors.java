@@ -13,7 +13,7 @@ public class UAWSectors{
 
     public static void load(){
 
-        trynaStart = new SectorPreset("trynaStart", tryna, 69){{
+        trynaStart = new SectorPreset("trynaStart", tyra, 69){{
             alwaysUnlocked = true;
             addStartingItems = true;
             captureWave = 15;
