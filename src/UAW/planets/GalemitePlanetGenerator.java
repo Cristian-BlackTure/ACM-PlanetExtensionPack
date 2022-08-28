@@ -29,6 +29,10 @@ import static mindustry.Vars.*;
 
 public class GalemitePlanetGenerator extends PlanetGenerator {
 	public GalemitePlanetGenerator() {
+        @Override
+        public Schematic getDefaultLoadout() {
+        return Loadouts.basicBastion;
+  }
 	}
 
 	public int seed = 69;
