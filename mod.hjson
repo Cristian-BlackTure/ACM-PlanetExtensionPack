@@ -5,9 +5,9 @@ main: "UAW.UAWModLoader",
 description:
 '''
 Made with Java And Chaotic Life Forms
+Please Install ACM Before You Play :)
 
 '''
 version: V7 TESTING (0.7.8.1)
 minGameVersion: 136
-dependencies: "acm"
 java: true
