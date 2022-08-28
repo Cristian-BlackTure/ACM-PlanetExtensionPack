@@ -1,10 +1,10 @@
-displayName: "ACM The Chaotic Mod Ever"
+displayName: "ACM Extension"
 name: "uaw"
 author: "BlackTure"
 main: "UAW.UAWModLoader",
 description:
 '''
-Made with Java And Chaotic Energy.
+Made with Java And Chaotic Life Forms
 
 '''
 version: V7 TESTING (0.7.8.1)
