@@ -27,7 +27,7 @@ import UAW.content.blocks.*;
 
 import static mindustry.Vars.*;
 
-public class GalemitePlanetGenerator extends SerpuloPlanetGenerator {
+public class GalemitePlanetGenerator extends PlanetGenerator {
 	public GalemitePlanetGenerator() {
 	}
 
@@ -38,18 +38,17 @@ public class GalemitePlanetGenerator extends SerpuloPlanetGenerator {
 
 	public Block[][] arr =
     {
-    {Blocks.sand, Blocks.water},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass},
-    {Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass, Blocks.grass}
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.water, UAWEnv.h2d2, Blocks.ice, Blocks.ice}
+
+
     };
 
     public ObjectMap<Block, Block> dec = ObjectMap.of(
@@ -60,8 +59,8 @@ public class GalemitePlanetGenerator extends SerpuloPlanetGenerator {
     );
 
     public ObjectMap<Block, Block> tars = ObjectMap.of(
-        Blocks.dirt, Blocks.dirt,
-        Blocks.dirt, Blocks.dirt
+        Blocks.ice, Blocks.ice,
+        UAWEnv.h2d2, Blocks.ice
     );
 
     float water = 2f / arr[0].length;
