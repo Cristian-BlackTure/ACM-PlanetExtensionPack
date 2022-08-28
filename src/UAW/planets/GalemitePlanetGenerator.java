@@ -75,7 +75,7 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
     @Override
     public void generateSector(Sector sector) {
     	super.generateSector(sector);
-    	sector.generateEnemyBase = false;
+    	sector.generateEnemyBase = true;
     }
 
     @Override
