@@ -4,7 +4,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 import UAW.planets.*;
 import mindustry.content.Planets.*;
-import UAW.content.;*
+import UAW.content.UAWPlanets;
 
 public class UAWSectors{
     public SectorPreset
