@@ -31,7 +31,7 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
 	public GalemitePlanetGenerator() {
 	}
 
-	public int seed = 96;
+	public int seed = 69;
 	BaseGenerator basegen = new BaseGenerator();
 	float scl = 1f;
 	float waterOffset = 0.050f;
