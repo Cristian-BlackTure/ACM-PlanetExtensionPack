@@ -63,7 +63,7 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
 
     public ObjectMap<Block, Block> tars = ObjectMap.of(
         Blocks.ice, Blocks.ice,
-        UAWEnv.h2d2, Blocks.ice
+        Blocks.ice, Blocks.ice
     );
 
     float water = 2f / arr[0].length;
