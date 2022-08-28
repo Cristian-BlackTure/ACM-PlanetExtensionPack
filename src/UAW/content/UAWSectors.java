@@ -5,13 +5,12 @@ import mindustry.type.*;
 
 import UAW.planets.*;
 import mindustry.content.Planets.*;
-import UAW.maps.*;
+import UAW.content.UAWPlanets;
 
-public static class UAWSectors{
+public class UAWSectors{
     public static SectorPreset
     trynaStart;
 
-    @Override
     public static void load(){
 
         trynaStart = new SectorPreset("trynaStart", tryna, 69){{
