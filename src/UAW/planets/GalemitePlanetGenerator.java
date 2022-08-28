@@ -411,4 +411,15 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
             tile.block = Blocks.air;
         }
     }
+    @Override
+    public Schematic getDefaultLoadout(){
+        return Loadouts.basicBastion;
+    }
+
+    @Override
+    public boolean allowLanding(Sector sector){
+        //TODO disallowed for now
+        return false;
+    }
+
 }
