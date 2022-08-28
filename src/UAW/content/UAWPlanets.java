@@ -31,7 +31,7 @@ public class UAWPlanets{
             );
 
             launchCapacityMultiplier = 0.5f;
-            sectorSeed = 2;
+            sectorSeed = 69;
             allowWaves = true;
             allowWaveSimulation = true;
             allowSectorInvasion = true;
@@ -49,7 +49,7 @@ public class UAWPlanets{
             atmosphereColor = Color.valueOf("3c1b8f");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
-            startSector = 15;
+            startSector = 69;
             alwaysUnlocked = true;
             landCloudColor = Pal.spore.cpy().a(0.5f);
             hiddenItems.addAll(Items.erekirItems).removeAll(Items.serpuloItems);
