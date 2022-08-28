@@ -2,7 +2,7 @@ package UAW.content;
 
 import mindustry.ctype.*;
 import mindustry.type.*;
-import UAW.planets.*;
+
 import mindustry.content.Planets.*;
 import UAW.content.UAWPlanets;
 
