@@ -56,8 +56,8 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
 
     public ObjectMap<Block, Block> dec = ObjectMap.of(
         Blocks.salt, Blocks.sand, Blocks.stone, Blocks.darksand,
-        Blocks.ice, Blocks.darksand, wallOreBeryllium, wallOreBeryllium, graphiticWall, wallOreTungsten,
-        Blocks.ice, Blocks.darksand, wallOreBeryllium, wallOreBeryllium, graphiticWall, wallOreTungsten,
+        Blocks.ice, Blocks.darksand, Blocks.wallOreBeryllium, Blocks.wallOreBeryllium, Blocks.graphiticWall, Blocks.wallOreTungsten,
+        Blocks.ice, Blocks.darksand, Blocks.wallOreBeryllium, Blocks.wallOreBeryllium, Blocks.graphiticWall, Blocks.wallOreTungsten,
         Blocks.sandWater, Blocks.sandWater, Blocks.stone
     );
 
