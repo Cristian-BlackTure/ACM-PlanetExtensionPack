@@ -21,7 +21,7 @@ import static mindustry.type.ItemStack.with;
 /** Contains Production structures, such as factories, drills, pumps, etc */
 public class UAWBlocksProduction {
 	public static Block placeholder,
-	// production
+	// production - erekir
 	uporedrill, maxdrill;
 
 	public static void load() {
