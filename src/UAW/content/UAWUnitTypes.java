@@ -61,8 +61,6 @@ public class UAWUnitTypes {
 	// Tanks - SPG
 	abbot, archer, arbalester, arbiter;
     
-    //T6 
-    deve;
 
 	// Steal from Progressed Material which stole from Endless Rusting which stole from Progressed Materials in the past which stole from BetaMindy
 	private static final Entry<Class<? extends Entityc>, Prov<? extends Entityc>>[] types = new Entry[]{
