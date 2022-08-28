@@ -16,7 +16,6 @@ public class UAWModLoader extends Mod {
 		UAWBlocksPower.load();
 		UAWBlocksLogistic.load();
 		UAWBlocksProduction.load();
-		UAWBlocksUnits.load();
                 UAWPlanets.load();
 	}
 
