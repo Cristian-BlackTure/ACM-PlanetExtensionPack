@@ -6,7 +6,7 @@ import mindustry.type.*;
 import static UAW.planets.*;
 import static mindustry.content.Planets.*;
 
-public static class UAWSectors{
+public class UAWSectors{
     public static SectorPreset
     trynaStart;
 
