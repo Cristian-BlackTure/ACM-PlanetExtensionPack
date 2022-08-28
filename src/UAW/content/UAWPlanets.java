@@ -52,7 +52,7 @@ public class UAWPlanets{
             startSector = 15;
             alwaysUnlocked = true;
             landCloudColor = Pal.spore.cpy().a(0.5f);
-            hiddenItems.addAll(Items.erekirItems).removeAll(Items.vertalItems);
+            hiddenItems.addAll(Items.erekirItems).removeAll(Items.serpuloItems);
         }};
     }
 }
