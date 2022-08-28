@@ -42,9 +42,9 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
     {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
     {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
     {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
-    {Blocks.sand, Blocks.water, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.darksand, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.darksand, Blocks.ice, Blocks.ice},
+    {Blocks.sand, Blocks.darksand, Blocks.ice, Blocks.ice},
     {Blocks.sand, Blocks.darksand, Blocks.ice, Blocks.stone},
     {Blocks.sand, Blocks.darksand, Blocks.ice, Blocks.stone},
     {Blocks.sand, Blocks.darksand, Blocks.ice, Blocks.stone},
@@ -55,9 +55,9 @@ public class GalemitePlanetGenerator extends PlanetGenerator {
     };
 
     public ObjectMap<Block, Block> dec = ObjectMap.of(
-        Blocks.salt, Blocks.sand, Blocks.stone,
-        Blocks.ice, Blocks.darksand, Blocks.stone,
-        Blocks.ice, Blocks.darksand, Blocks.stone,
+        Blocks.salt, Blocks.sand, Blocks.stone, Blocks.darksand,
+        Blocks.ice, Blocks.darksand, wallOreBeryllium, wallOreBeryllium, graphiticWall, wallOreTungsten,
+        Blocks.ice, Blocks.darksand, wallOreBeryllium, wallOreBeryllium, graphiticWall, wallOreTungsten,
         Blocks.sandWater, Blocks.sandWater, Blocks.stone
     );
 
