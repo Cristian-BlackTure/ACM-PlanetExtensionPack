@@ -3,7 +3,7 @@ package UAW.content;
 import mindustry.ctype.*;
 import mindustry.type.*;
 
-import static UAW.planets.*;
+import static UAW.planets;
 import static mindustry.content.Planets.*;
 
 public class UAWSectors{
