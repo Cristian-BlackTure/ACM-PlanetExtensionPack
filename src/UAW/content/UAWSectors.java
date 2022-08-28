@@ -3,11 +3,11 @@ package UAW.content;
 import mindustry.ctype.*;
 import mindustry.type.*;
 
-import static UAW.planets;
-import static mindustry.content.Planets.*;
+import UAW.planets;
+import mindustry.content.Planets.*;
 
 public class UAWSectors{
-    public static SectorPreset
+    public SectorPreset
     trynaStart;
 
     @Override
