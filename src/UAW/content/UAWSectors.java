@@ -10,8 +10,7 @@ public class UAWSectors{
     public SectorPreset
     trynaStart;
 
-    @Override
-    public static void load(){
+    public void load(){
 
         trynaStart = new SectorPreset("trynaStart", tryna, 69){{
             alwaysUnlocked = true;
