@@ -18,7 +18,7 @@ import mindustry.world.blocks.environment.*;
 
 import static mindustry.Vars.*;
 
-public class TyraPlanetGenerator extends PlanetGenerator{
+class TyraPlanetGenerator extends PlanetGenerator{
     //alternate, less direct generation (wip)
     public static boolean alt = false;
 
