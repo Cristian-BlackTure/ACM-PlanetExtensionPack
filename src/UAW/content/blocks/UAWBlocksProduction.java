@@ -89,7 +89,7 @@ public class UAWBlocksProduction {
         }};
 
 	}
-        t6ground = new Reconstructor("t6-ground"){{
+        t6ground = new Reconstructor("t6ground"){{
             requirements(Category.units, with(Items.lead, 4000, Items.silicon, 3000, Items.thorium, 1000, Items.plastanium, 600, Items.phaseFabric, 600, Items.surgeAlloy, 800));
 
             size = 9;
