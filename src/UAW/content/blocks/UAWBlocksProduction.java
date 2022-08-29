@@ -27,15 +27,12 @@ public class UAWBlocksProduction {
 	public static void load() {
 
         uporedrill = new BeamDrill("uporedrill"){{
-            requirements(Category.production, with(Items.beryllium, 40));
-            consumePower(0.15f);
+            requirements(Category.production, with(Items.copper, 40));
 
-            drillTime = 160f;
-            tier = 5;
+            drillTime = 60f;
+            tier = 2;
             size = 2;
-            range = 5;
-            fogRadius = 3;
-            researchCost = with(Items.beryllium, 10);
+            alwaysUnlocked = true
 
         }};
 
