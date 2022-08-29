@@ -15,6 +15,7 @@ import mindustry.maps.generators.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.environment.*;
+import UAW.content.UAWCores;
 
 import static mindustry.Vars.*;
 
