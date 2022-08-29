@@ -71,7 +71,7 @@ public class UAWCores{
     public static void load(){ 
       // region storage
  
-        coreIntel = CoreBlock("core-intel");{{
+        coreIntel = CoreBlock("core-intel"){{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
             unitType = UnitTypes.gamma;
@@ -83,7 +83,7 @@ public class UAWCores{
             unitCapModifier = 24;
             researchCostMultiplier = 0.11f;
         }};
-    };
+    }
 }
         
        
