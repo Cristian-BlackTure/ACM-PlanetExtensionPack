@@ -69,7 +69,7 @@ public class UAWCores{
      coreIntel
        
     public void load(){ 
-      // region cores
+      // region storage
  
         coreIntel = CoreBlock("core-intel");{{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
