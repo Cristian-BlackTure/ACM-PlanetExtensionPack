@@ -25,7 +25,6 @@ public class UAWModLoader extends Mod {
 	public void loadContent() {
 		UAWStatusEffects.load();
 		UAWBullets.load();
-		UAWUnitTypes.load();
 		UAWItems.load();
 		UAWLiquids.load();
 		UAWBlockContent();
