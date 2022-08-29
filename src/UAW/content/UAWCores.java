@@ -71,17 +71,13 @@ public class UAWCores{
     public void load(){ 
       // region cores
  
-        coreintel = new coreBlock("core-intel"){{ 
+        coreintel = new coreBlock("coreintel"){{ 
         requirements(Category.effect, with(Items.silicon, 4500)); 
             health = 35000; 
              itemCapacity = 35000;
              unitCapModifier = 14;
              size = 4; 
              alwaysUnlocked = true;
-             research = [
-                 root = true;
-                 name = tyra;
-             ]
         }
         };
     };
