@@ -63,11 +63,10 @@ import static arc.graphics.g2d.Lines.lineAngle;
 import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
 
-public static class UAWCores{
+public class UAWCores{
 
      //storage
-     coreIntel
-;
+     coreIntel;
        
     public static void load(){ 
       // region storage
