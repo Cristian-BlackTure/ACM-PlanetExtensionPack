@@ -32,7 +32,7 @@ public class UAWPlanets{
             );
 
             launchCapacityMultiplier = 0.5f;
-            sectorSeed = 69;
+            sectorSeed = 1;
             allowWaves = true;
             allowWaveSimulation = true;
             allowSectorInvasion = true;
