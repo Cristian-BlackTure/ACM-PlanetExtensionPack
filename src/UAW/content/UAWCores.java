@@ -53,6 +53,8 @@ import mindustry.world.blocks.power.ConsumeGenerator;
 import mindustry.world.blocks.power.PowerNode;
 import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.blocks.production.SolidPump;
+import mindustry.world.blocks.campaign.*;
+import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.sandbox.PowerVoid;
 import mindustry.world.blocks.storage.StorageBlock;
 import mindustry.world.draw.*;
@@ -63,16 +65,15 @@ import static arc.graphics.g2d.Lines.lineAngle;
 import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
 
-public static class UAWCores{
+public class UAWCores{
 
      //storage
-     coreIntel
-;
+    public static Block coreIntel;
        
     public static void load(){ 
       // region storage
  
-        coreIntel = CoreBlock("core-intel");{{
+        coreIntel = new CoreBlock("core-intel"){{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
             unitType = UnitTypes.gamma;
@@ -84,7 +85,7 @@ public static class UAWCores{
             unitCapModifier = 24;
             researchCostMultiplier = 0.11f;
         }};
-    };
+    }
 }
         
        
