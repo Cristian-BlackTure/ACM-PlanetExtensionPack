@@ -651,4 +651,8 @@ public class TyraPlanetGenerator extends PlanetGenerator{
             basegen.postGenerate();
         }
     }
+    @Override
+    public Schematic getDefaultLoadout(){
+        return Loadouts.core-intel;
+    }
 }
