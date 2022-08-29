@@ -32,7 +32,7 @@ public class UAWBlocksProduction {
             drillTime = 60f;
             tier = 2;
             size = 2;
-            alwaysUnlocked = true
+            alwaysUnlocked = true;
 
         }};
 
