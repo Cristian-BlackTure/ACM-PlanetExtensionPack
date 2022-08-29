@@ -46,7 +46,7 @@ public class TyraPlanetGenerator extends PlanetGenerator{
 
     ObjectMap<Block, Block> tars = ObjectMap.of(
         Blocks.sporeMoss, Blocks.shale,
-        Blocks.moss, Blocks.shale
+        Blocks.moss, Blocks.shale, Blocks.water
     );
 
     float water = 2f / arr[0].length;
