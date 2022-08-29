@@ -13,6 +13,7 @@ import mindustry.world.Block;
 import mindustry.world.blocks.production.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.Attribute;
+import UAW.content.ACMUnitTypes;
 
 import static UAW.Vars.tick;
 import static mindustry.Vars.tilesize;
@@ -24,9 +25,12 @@ public class UAWBlocksProduction {
 	// production - erekir
 	uporedrill, maxdrill;
 
+        // Unit Factory
+        t6ground;
+
 	public static void load() {
 
-        uporedrill = new BeamDrill("uporedrill"){{
+        uporedrill = new Drill("uporedrill"){{
             requirements(Category.production, with(Items.copper, 40));
 
             drillTime = 60f;
@@ -63,4 +67,19 @@ public class UAWBlocksProduction {
         }};
 
 	}
+        t6ground = new Reconstructor("t6-ground"){{
+            requirements(Category.units, with(Items.lead, 4000, Items.silicon, 3000, Items.thorium, 1000, Items.plastanium, 600, Items.phaseFabric, 600, Items.surgeAlloy, 800));
+
+            size = 9;
+            consumePower(25f);
+            consumeItems(with(Items.silicon, 1000, Items.plastanium, 600, Items.surgeAlloy, 500, Items.phaseFabric, 350));
+            consumeLiquid(Liquids.cryofluid, 3f);
+
+            constructTime = 60f * 60f * 4;
+            liquidCapacity = 180f;
+
+            upgrades.addAll(
+                new UnitType[]{UnitTypes.toxopid, ACMUnitTypes.kivi}
+            );
+        }};
 }
