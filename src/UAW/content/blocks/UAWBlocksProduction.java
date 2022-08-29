@@ -26,7 +26,7 @@ public class UAWBlocksProduction {
 	uporedrill, maxdrill;
 
         // Unit Factory
-        t6ground;
+        public static Block t6ground;
 
 	public static void load() {
 
