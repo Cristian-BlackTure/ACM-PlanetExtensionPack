@@ -80,8 +80,14 @@ public class UAWCores{
              size = 4; 
              alwaysUnlocked = true;
              research = {
-                 root = true
-                 name = tyra
+                 root = true;
+                 name = tyra;
+             }
+        }
+        }
+    }
+}
+        
        
 
     
