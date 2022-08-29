@@ -16,6 +16,7 @@ import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.environment.*;
 import UAW.content.UAWCores;
+import UAW.content.ACMLoadouts;
 
 import static mindustry.Vars.*;
 
@@ -651,5 +652,9 @@ public class TyraPlanetGenerator extends PlanetGenerator{
         if(sector.hasEnemyBase()){
             basegen.postGenerate();
         }
+    }
+    @Override
+    public Schematic getDefaultLoadout(){
+        return ACMLoadouts.basicIntel;
     }
 }
