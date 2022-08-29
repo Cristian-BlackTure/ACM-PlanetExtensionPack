@@ -17,6 +17,7 @@ public class UAWModLoader extends Mod {
 		UAWBlocksLogistic.load();
 		UAWBlocksProduction.load();
                 UAWPlanets.load();
+                UAWCores.load();
 	}
 
 	@Override
