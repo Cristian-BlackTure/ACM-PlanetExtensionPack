@@ -68,7 +68,6 @@ public class UAWCores{
      //cores
       coreintel
        
-    @Override 
     public void load(){ 
       // region cores
  
