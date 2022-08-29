@@ -34,7 +34,7 @@ import static UAW.content.UAWBullets.fragGlassFrag;
 import static mindustry.Vars.tilesize;
 
 @SuppressWarnings("unchecked")
-public class UAWUnitTypes {
+public class ACMUnitTypes {
 	public static UnitType placeholder,
 
 	// Everyone
