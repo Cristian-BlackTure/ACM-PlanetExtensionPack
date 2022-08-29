@@ -78,12 +78,12 @@ public class UAWCores{
              unitCapModifier = 14;
              size = 4; 
              alwaysUnlocked = true;
-             research = {
+             research = [
                  root = true;
                  name = tyra;
-             }
+             ]
         }
-        }
+        };
     };
 }
         
