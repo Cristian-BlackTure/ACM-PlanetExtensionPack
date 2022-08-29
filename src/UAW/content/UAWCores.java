@@ -71,7 +71,7 @@ public class UAWCores{
     public void load(){ 
       // region cores
  
-        coreIntel = new CoreBlock("core-intel"){{
+        coreIntel = CoreBlock("core-intel"){{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
             unitType = UnitTypes.gamma;
