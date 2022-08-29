@@ -71,15 +71,18 @@ public class UAWCores{
     public void load(){ 
       // region cores
  
-        coreintel = new coreBlock("coreintel"){{ 
-        requirements(Category.effect, with(Items.silicon, 4500)); 
-            health = 35000; 
-             itemCapacity = 35000;
-             unitCapModifier = 14;
-             size = 4; 
-             alwaysUnlocked = true;
-        }
-        };
+        coreintel = new CoreBlock("core-intel"){{
+            requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
+
+            unitType = UnitTypes.gamma;
+            health = 16000;
+            itemCapacity = 23000;
+            size = 4;
+            thrusterLength = 40/4f;
+
+            unitCapModifier = 24;
+            researchCostMultiplier = 0.11f;
+        }};
     };
 }
         
