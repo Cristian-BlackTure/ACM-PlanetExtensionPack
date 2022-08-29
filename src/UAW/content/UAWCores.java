@@ -66,7 +66,7 @@ import static mindustry.type.ItemStack.with;
 public class UAWCores{
 
      //storage
-     coreIntel;
+    public static Block coreIntel;
        
     public static void load(){ 
       // region storage
