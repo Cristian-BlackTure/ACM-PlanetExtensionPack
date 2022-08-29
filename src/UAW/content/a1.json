@@ -1,0 +1,45 @@
+name: A-1
+type: flying
+flying: true
+defaultController: BuilderAI
+hitSize: 15
+health: 560
+speed: 3.8
+accel: 0.1
+drag: 0.03
+lowAltitude: true
+engineOffset: 13
+buildSpeed: 2.0
+buildBeamOffset: 12
+mineSpeed: 11
+mineTier: 3
+weapons: [
+  {
+    name: intensity-weapon
+    top: false
+    x: 0
+    y: 0
+    reload: 10
+    recoil: 3
+    shootSound: lasershoot
+    shake: 0.01
+    bullet: {
+      type: LaserBoltBulletType
+      damage: 100
+      buildingDamageMultiplier: 0.01
+      speed: 3
+      lifetime: 40
+      collidesTeam: true
+      healPercent: 5
+      frontColor: ffffff
+      backColor: 98ffa9
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    reload: 40
+    amount: 15
+  }
+]
