@@ -1,5 +1,4 @@
 package UAW.content.blocks;
-import android.icu.util.ULocale.Category;
 
 import UAW.audiovisual.*;
 import UAW.content.*;
@@ -25,7 +24,7 @@ public class UAWBlocksProduction {
 	// production
 	uporedrill, maxdrill;
 
-	public static void load() {vtfff==*=&%*%*%*load
+	public static void load()
 
         uporedrill = new Drill("uporedrill"){{
             requirements(Category.production, with(Items.copper, 40));
