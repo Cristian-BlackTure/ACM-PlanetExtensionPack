@@ -6,12 +6,12 @@ import mindustry.type.*;
 
 
 public class ACMItems{
-    public static tyraItems
+    public static ACMItems
     scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
     phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass;
 
     //TODO remove, these are for debugging only
-    public static final Seq<tyraItems> tyraItems = new Seq<>();
+    public static final Seq<ACMItems> tyraItems = new Seq<>();
     
         public static void load(){
         copper = new Item("copper", Color.valueOf("d99d73")){{
