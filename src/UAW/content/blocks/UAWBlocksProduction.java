@@ -86,21 +86,5 @@ public class UAWBlocksProduction {
             //TODO different 
             consumePower(5f);
         }};
-
 	}
-        recon6 = new Reconstructor("recon6"){{
-            requirements(Category.units, with(Items.lead, 4000, Items.silicon, 3000, Items.thorium, 1000, Items.plastanium, 600, Items.phaseFabric, 600, Items.surgeAlloy, 800));
-
-            size = 9;
-            consumePower(25f);
-            consumeItems(with(Items.silicon, 1000, Items.plastanium, 600, Items.surgeAlloy, 500, Items.phaseFabric, 350));
-            consumeLiquid(Liquids.cryofluid, 3f);
-
-            constructTime = 60f * 60f * 4;
-            liquidCapacity = 180f;
-
-            upgrades.addAll(
-                new UnitType[]{UnitTypes.toxopid, ACMUnitTypes.kivi}
-            );
-        }};
 }
