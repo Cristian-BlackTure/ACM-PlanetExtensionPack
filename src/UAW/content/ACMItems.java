@@ -11,7 +11,7 @@ public class ACMItems{
     phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass;
 
     //TODO remove, these are for debugging only
-    public static final Seq<Item> tyraItems = new Seq<>();
+    public static final Seq<tyraItems> tyraItems = new Seq<>();
     
         public static void load(){
         copper = new Item("copper", Color.valueOf("d99d73")){{
