@@ -14,7 +14,7 @@ import static mindustry.content.UnitTypes.*;
 public class TyraTechTree{
 
     public static void load(){
-        Planets.serpulo.techTree = nodeRoot("serpulo", coreShard, () -> {
+        UAWPlanets.tyra.techTree = nodeRoot("tyra", coreIntel, () -> {
 
             node(conveyor, () -> {
 
