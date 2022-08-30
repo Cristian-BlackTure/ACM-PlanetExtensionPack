@@ -68,12 +68,12 @@ import static mindustry.type.ItemStack.with;
 public class UAWCores{
 
      //storage
-    public static Block coreIntel;
+    public static Block coreintel;
        
     public static void load(){ 
       // region storage
  
-        coreIntel = new CoreBlock("core-intel"){{
+        coreintel = new CoreBlock("core-intel"){{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
             unitType = UnitTypes.gamma;
