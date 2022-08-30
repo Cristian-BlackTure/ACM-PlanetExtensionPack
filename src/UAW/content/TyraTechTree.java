@@ -14,7 +14,7 @@ import static UAW.content.UAWCores;
 public class TyraTechTree{
 
     public static void load(){
-        UAWPlanets.tyra.techTree = nodeRoot("tyra", core-intel, () -> {
+        UAWPlanets.tyra.techTree = nodeRoot("tyra", coreintel, () -> {
 
             node(conveyor, () -> {
 
