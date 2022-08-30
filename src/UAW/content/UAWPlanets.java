@@ -18,6 +18,8 @@ import mindustry.content.*;
 import mindustry.content.Blocks;
 import UAW.planets.*;
 import UAW.content.TyraTechTree.*;
+import UAW.content.*;
+import UAW.content.ACMBlock.*;
 
 public class UAWPlanets{
     public static Planet
