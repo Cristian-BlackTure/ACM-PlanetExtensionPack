@@ -5,13 +5,13 @@ import arc.struct.*;
 import mindustry.type.*;
 
 
-public class ACMItems{
+public class Item{
     public static ACMItems
     scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
     phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass;
 
     //TODO remove, these are for debugging only
-    public static final Seq<ACMItems> tyraItems = new Seq<>();
+    public static final Seq<Item> ACMItems = new Seq<>();
     
         public static void load(){
         copper = new Item("copper", Color.valueOf("d99d73")){{
@@ -104,7 +104,7 @@ public class ACMItems{
             buildable = false;
         }};
 
-        tyraItems.addAll(
+        ACMItems.addAll(
         scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
         phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass
         );
