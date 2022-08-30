@@ -100,7 +100,7 @@ public class UAWBlocksPower {
 
             consumeLiquid(Liquids.slag, 10f / 60f);
             consumeLiquid(Liquids.water, 10f / 60f);
-            consumeItem(UAWItems.mm); 
+            consumeItem(UAWItems.cryogel); 
 
             itemDuration = 60f * 3f;
             itemCapacity = 10;
