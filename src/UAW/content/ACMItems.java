@@ -6,7 +6,7 @@ import mindustry.type.*;
 
 
 public class ACMItems{
-    public static Item
+    public static tyraItems
     scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
     phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass;
 
