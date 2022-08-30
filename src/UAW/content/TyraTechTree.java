@@ -1,15 +1,15 @@
-package mindustry.content;
+package UAW.content;
 
 import arc.struct.*;
 import mindustry.game.Objectives.*;
+import UAW.content.UAWPlanets;
+import UAW.content.UAWCores;
 
 import static mindustry.content.Blocks.*;
 import static mindustry.content.SectorPresets.*;
 import static mindustry.content.SectorPresets.craters;
 import static mindustry.content.TechTree.*;
 import static mindustry.content.UnitTypes.*;
-import static UAW.content.UAWPlanets;
-import static UAW.content.UAWCores;
 
 public class TyraTechTree{
 
