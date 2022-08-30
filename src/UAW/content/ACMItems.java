@@ -4,9 +4,8 @@ import arc.graphics.*;
 import arc.struct.*;
 import mindustry.type.*;
 
-
-public class Item{
-    public static ACMItems
+public class ACMItem{
+    public static Item
     scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
     phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass;
 
