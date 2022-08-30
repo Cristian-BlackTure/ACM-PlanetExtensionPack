@@ -19,7 +19,6 @@ public class UAWModLoader extends Mod {
                 UAWCores.load();
                 ACMLoadouts.load();
                 ACMUnitTypes.load();
-                ACMProductionBlocks();
 	}
 
 	@Override
@@ -29,6 +28,7 @@ public class UAWModLoader extends Mod {
 		UAWItems.load();
 		UAWLiquids.load();
 		UAWBlockContent();
+                ACMProductionBlocks();
 
 	}
 }
