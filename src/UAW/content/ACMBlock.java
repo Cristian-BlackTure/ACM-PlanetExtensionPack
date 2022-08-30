@@ -19,7 +19,7 @@ import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
 
 /** Contains Production structures, such as factories, drills, pumps, etc */
-public class ACMProductionBlocks {
+public class ACMBlock {
 	public static Block placeholder,
 	// production
 	steamdrill, statdrill, magneticdrill;
