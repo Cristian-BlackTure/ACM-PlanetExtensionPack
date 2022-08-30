@@ -103,6 +103,11 @@ public class ACMItems{
             explosiveness = 0.4f;
             buildable = false;
         }};
+
+        tyraItems.addAll(
+        scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium,
+        phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass
+        );
         
         }
         }
