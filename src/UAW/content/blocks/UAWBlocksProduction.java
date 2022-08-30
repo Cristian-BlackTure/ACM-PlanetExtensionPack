@@ -36,6 +36,7 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import mindustry.world.blocks.units.Reconstructor;
+import mindustry.world.blocks.units.*;
 import UAW.content.ACMUnitTypes;
 
 import static UAW.Vars.tick;
@@ -46,10 +47,7 @@ import static mindustry.type.ItemStack.with;
 public class UAWBlocksProduction {
 	public static Block placeholder,
 	// production - erekir
-	uporedrill, maxdrill;
-
-        // Unit Factory
-        public static Block t6ground;
+	uporedrill, maxdrill, recon6;
 
 	public static void load() {
 
@@ -90,7 +88,7 @@ public class UAWBlocksProduction {
         }};
 
 	}
-        t6ground = new Reconstructor("t6ground"){{
+        recon6 = new Reconstructor("recon6"){{
             requirements(Category.units, with(Items.lead, 4000, Items.silicon, 3000, Items.thorium, 1000, Items.plastanium, 600, Items.phaseFabric, 600, Items.surgeAlloy, 800));
 
             size = 9;
