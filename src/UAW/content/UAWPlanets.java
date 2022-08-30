@@ -20,7 +20,6 @@ import UAW.planets.*;
 import UAW.content.TyraTechTree.*;
 import UAW.content.*;
 import UAW.content.ACMBlock.*;
-import UAW.content.ACMItems.*;
 
 public class UAWPlanets{
     public static Planet
