@@ -24,7 +24,7 @@ public class ACMProductionBlocks {
 	// production
 	steamdrill, statdrill, magneticdrill;
     
-	public static void load();
+	public static void load(){
 
         steamdrill = new Drill("steamdrill"){{
             requirements(Category.production, with(Items.copper, 40, Items.lead, 40));
@@ -58,5 +58,4 @@ public class ACMProductionBlocks {
 
         }};        
         }
-        
-        
+        }
