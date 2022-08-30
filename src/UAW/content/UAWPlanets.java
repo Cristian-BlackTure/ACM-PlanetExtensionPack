@@ -20,6 +20,7 @@ import UAW.planets.*;
 import UAW.content.TyraTechTree.*;
 import UAW.content.*;
 import UAW.content.ACMBlock.*;
+import UAW.content.ACMItems.*;
 
 public class UAWPlanets{
     public static Planet
@@ -56,7 +57,7 @@ public class UAWPlanets{
             startSector = 69;
             alwaysUnlocked = true;
             landCloudColor = Pal.spore.cpy().a(0.5f);
-            hiddenItems.addAll(Items.erekirItems, Items.serpuloItems).removeAll(UAW.TyraTechTree);
+            hiddenItems.addAll(Items.erekirItems, Items.serpuloItems).removeAll(ACMItems.tyraItems);
         }};
     }
 }
