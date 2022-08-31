@@ -14,14 +14,18 @@ import static UAW.content.UAWPlanets.*;
 
 public class TyraTechTree{
 
+	private static void ACMNode(UnlockableContent parent, Runnable children) {
+		context = TechTree.all.find(t -> t.content == parent);
+		children.run();
+	}
+
     public static void load(){
         UAWPlanets.tyra.techTree = nodeRoot("tyra", UAWCores.coreIntel, () -> {
 
-            node(UAWCores.coreIntel, () -> {
-
-                node(ACMBlock.steamdrill, () -> {
-                    node(ACMBlock.statdrill, () -> {
-                        node(ACMBlock.magneticdrill, () -> {
+            ACMnode(coreIntel, () -> {
+                node(steamdrill, () -> {
+                    node(statdrill, () -> {
+                        node(magneticdrill, () -> {
                           
                           });
                           });
