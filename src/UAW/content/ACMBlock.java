@@ -68,7 +68,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, whitedrill;
+	steamdrill, statdrill, magneticdrill, whitess;
     
 	public static void load(){
 
@@ -106,32 +106,22 @@ public class ACMBlock {
             alwaysUnlocked = true;
 
         }};                                
-        
-         whitedrill = new AttributeCrafter("whitedrill"){{
-            requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
-            outputItem = new ItemStack(Items.sporePod, 1);
-            craftTime = 100;
+
+        whitess = new GenericCrafter("whitess"){{
+            requirements(Category.production, with(Items.copper, 30, Items.lead, 25));
+            craftEffect = Fx.smeltsmoke;
+            outputItem = new ItemStack(Items.silicon, 1);
+            craftTime = 40f;
             size = 2;
-            hasLiquids = true;
             hasPower = true;
-            hasItems = true;
+            hasLiquids = false;
+            drawer = new DrawMulti(new DrawDefault(), new DrawFlame(Color.valueOf("ffef99")));
+            ambientSound = Sounds.smelter;
+            ambientSoundVolume = 0.07f;
 
-            craftEffect = Fx.none;
-            envRequired |= UAWEnv.h2d2;
-            attribute = ACMAttribute.h2d2;
+            consumeItems(with(Items.coal, 1, Items.sand, 2));
+            consumePower(0.50f);
+        }};
 
-            legacyReadWarmup = true;
-            drawer = new DrawMulti(
-            new DrawRegion("-bottom"),
-            new DrawLiquidTile(Liquids.water),
-            new DrawDefault(),
-            new DrawCultivator(),
-            new DrawRegion("-top")
-            );
-            maxBoost = 2f;
-
-            consumePower(80f / 60f);
-            consumeLiquid(UAWLiquids.steam, 18f / 60f);
-        }};       
         }
         }
