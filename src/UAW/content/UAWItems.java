@@ -20,6 +20,8 @@ import UAW.planets.*;
 import UAW.content.TyraTechTree.*;
 import UAW.content.*;
 import UAW.content.ACMBlock.*;
+import UAW.audiovisual.UAWPal;
+import arc.graphics.Color;
 
 public class UAWItems {
 	public static Item placeholder,
@@ -39,10 +41,5 @@ public class UAWItems {
 		compositeAlloy = new Item("item-composite-alloy", UAWPal.compAlloyMid) {{
 			cost = 2.5f;
 		}};
-
-        UAWItems.addAll(
-        cryogel
-        );
-
 	}
 }
