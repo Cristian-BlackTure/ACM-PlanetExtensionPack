@@ -36,7 +36,6 @@ import arc.struct.*;
 import arc.util.*;
 import mindustry.ai.*;
 import mindustry.ai.types.*;
-import mindustry.annotations.Annotations.*;
 import mindustry.entities.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
@@ -273,7 +272,7 @@ public class ACMUnitTypes {
 		}};
             a1 = new UAWUnitType("a1"){{
             coreUnitDock = true;
-            controller = u -> new BuilderAI(true, coreFleeRange);
+            controller = u -> new BuilderAI;
             isEnemy = false;
             envDisabled = 0;
 
