@@ -3,10 +3,14 @@ package UAW.content;
 import UAW.audiovisual.UAWPal;
 import arc.graphics.Color;
 import mindustry.type.Item;
+import UAW.content.ACMBlock.*;
 
 public class UAWItems {
-	public static Item placeholder,
+	public static Item,
 		cryogel, anthracite, compositeAlloy, dieselCore;
+
+    public static final Seq<Item> UAWItems = new Seq<>()
+
 
 	public static void load() {
 		cryogel = new Item("item-cryogel", Color.valueOf("87ceeb")) {{
@@ -21,6 +25,10 @@ public class UAWItems {
 		compositeAlloy = new Item("item-composite-alloy", UAWPal.compAlloyMid) {{
 			cost = 2.5f;
 		}};
+
+        UAWItems.addAll(
+        cryogel
+        );
 
 	}
 }
