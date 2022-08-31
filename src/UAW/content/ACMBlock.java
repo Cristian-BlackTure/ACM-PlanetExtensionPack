@@ -5,6 +5,7 @@ import UAW.content.*;
 import UAW.world.blocks.production.*;
 import UAW.world.drawer.DrawBoilerSmoke;
 import UAW.content.UAWLiquids.*;
+import UAW.content.blocks.UAWEnv.*;
 import arc.graphics.Color;
 import arc.graphics.*;
 import arc.math.*;
@@ -47,13 +48,13 @@ import static mindustry.Vars.tilesize;
 import static mindustry.type.ItemStack.with;
 
 /** Contains Production structures, such as factories, drills, pumps, etc */
-public class ACMBlock{
+public class ACMBlock {
 	public static Block placeholder,
 	// production
 	steamdrill, statdrill, magneticdrill;
     
     // crafting
-    steamgenerator;
+    steamgenerator, h2d2harvester;
     
 	public static void load(){
 
@@ -89,7 +90,7 @@ public class ACMBlock{
 
         }};
         
-        steamgenerator = new GenericCrafter("steam-generator"){{
+        steamgenerator = new GenericCrafter("steamgenerator"){{
             requirements(Category.crafting, with(Items.copper, 65, Items.silicon, 40, Items.lead, 30));
             outputLiquid = new LiquidStack(UAWLiquids.steam, 12f / 60f);
             size = 2;
@@ -108,8 +109,32 @@ public class ACMBlock{
             consumeLiquid(Liquids.water, 12f / 60f);
         }};
         
+        h2d2harvester = new AttributeCrafter("h2d2harvester"){{
+            requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
+            outputItem = new ItemStack(Items.sporePod, 1);
+            craftTime = 200;
+            size = 2;
+            hasLiquids = true;
+            hasPower = true;
+            hasItems = true;
+
+            craftEffect = Fx.none;
+            envRequired |= UAWEnv.h2d2;
+            attribute = Attribute.spores;
+
+            legacyReadWarmup = true;
+            drawer = new DrawMulti(
+            new DrawRegion("-bottom"),
+            new DrawLiquidTile(UAWLiquids.steam),
+            new DrawDefault(),
+            new DrawCultivator(),
+            new DrawRegion("-top")
+            );
+            maxBoost = 2f;
+
+            consumePower(80f / 60f);
+            consumeLiquid(UAWLiquids.steam, 18f / 60f);
+        }};      
+        
         }
         }
-        
-        
-        
