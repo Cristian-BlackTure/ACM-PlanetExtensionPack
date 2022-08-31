@@ -60,6 +60,7 @@ import mindustry.world.blocks.storage.StorageBlock;
 import mindustry.world.draw.*;
 import mindustry.world.meta.Attribute;
 import mindustry.world.meta.BuildVisibility;
+import UAW.content.ACMUnitTypes.*;
 
 import static arc.graphics.g2d.Lines.lineAngle;
 import static mindustry.Vars.tilesize;
@@ -76,7 +77,7 @@ public class UAWCores{
         coreIntel = new CoreBlock("core-intel"){{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
-            unitType = UnitTypes.gamma;
+            unitType = ACMUnitTypes.a1;
             health = 16000;
             itemCapacity = 23000;
             size = 4;
