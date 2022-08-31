@@ -107,7 +107,7 @@ public class ACMBlock {
 
         }};                                
         
-         cultivator = new AttributeCrafter("cultivator"){{
+         whitedrill = new AttributeCrafter("whitedrill"){{
             requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
             outputItem = new ItemStack(Items.sporePod, 1);
             craftTime = 100;
