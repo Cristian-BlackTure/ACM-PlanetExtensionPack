@@ -2,10 +2,11 @@ package UAW.world.meta;
 
 import arc.struct.*;
 import mindustry.*;
+import UAW.content.blocks.UAWEnv.*;
 
 public class ACMAttribute{
-    public static Attribute[] all = {};
-    public static ObjectMap<String, Attribute> map = new ObjectMap<>();
+    public static ACMAttribute[] all = {};
+    public static ObjectMap<String, ACMAttribute> map = new ObjectMap<>();
 
     /** Heat content. Used for thermal generator yield. */
     public static final Attribute
@@ -43,15 +44,15 @@ public class ACMAttribute{
     }
 
     /** Never returns null, may throw an exception if not found. */
-    public static Attribute get(String name){
-        return map.getThrow(name, () -> new IllegalArgumentException("Unknown Attribute type: " + name));
+    public static ACMAttribute get(String name){
+        return map.getThrow(name, () -> new IllegalArgumentException("Unknown ACMAttribute type: " + name));
     }
 
     /** Automatically registers this attribute for use. Do not call after mod init. */
     public static Attribute add(String name){
-        Attribute a = new Attribute(all.length, name);
-        Attribute[] prev = all;
-        all = new Attribute[all.length + 1];
+        ACMAttribute a = new ACMAttribute(all.length, name);
+        ACMAttribute[] prev = all;
+        all = new ACMAttribute[all.length + 1];
         System.arraycopy(prev, 0, all, 0, a.id);
         all[a.id] = a;
         map.put(name, a);
