@@ -33,7 +33,7 @@ public class ACMAttribute{
         return Vars.state.envAttrs.get(this);
     }
 
-    Attribute(int id, String name){
+    ACMAttribute(int id, String name){
         this.id = id;
         this.name = name;
     }
