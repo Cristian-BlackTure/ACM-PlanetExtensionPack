@@ -17,9 +17,9 @@ public class TyraTechTree{
     public static void load(){
         UAWPlanets.tyra.techTree = nodeRoot("tyra", UAWCores.coreIntel, () -> {
 
-            node(conveyor, () -> {
+            node(UAWCores.coreIntel, () -> {
 
-                node(junction, () -> {
+                node(ACMBlock.steamdrill, () -> {
                     node(router, () -> {
                         node(launchPad, Seq.with(new SectorComplete(extractionOutpost)), () -> {
                           
