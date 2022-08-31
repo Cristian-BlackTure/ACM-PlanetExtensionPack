@@ -104,5 +104,18 @@ public class ACMBlock {
             alwaysUnlocked = true;
 
         }};                                
+        
+        FieldProjector = new BaseShield("field-projector"){{
+            requirements(Category.effect, with(items.copper, 1));
+
+            size = 3;
+            width = 50f;
+            length = 36;
+            shieldHealth = 1000f;
+            cooldownNormal = 3f;
+            cooldownBrokenBase = 0.35f;
+
+            consumePower(4f);
+        }};        
         }
         }
