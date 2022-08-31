@@ -10,9 +10,6 @@ public class UAWItems {
 	public static Item placeholder,
 		cryogel, anthracite, compositeAlloy, dieselCore;
 
-    public static final Seq<Item> UAWItems = new Seq<>();
-
-
 	public static void load() {
 		cryogel = new Item("item-cryogel", Color.valueOf("87ceeb")) {{
 			flammability = -10f;
