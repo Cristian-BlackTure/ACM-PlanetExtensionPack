@@ -43,6 +43,20 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import mindustry.content.Items.*;
+import UAW.audiovisual.*;
+import UAW.content.*;
+import UAW.world.blocks.production.*;
+import UAW.world.drawer.DrawBoilerSmoke;
+import arc.graphics.Color;
+import mindustry.content.*;
+import mindustry.entities.effect.MultiEffect;
+import mindustry.graphics.*;
+import mindustry.type.*;
+import mindustry.world.Block;
+import mindustry.world.blocks.production.*;
+import mindustry.world.draw.*;
+import mindustry.world.meta.Attribute;
+
 
 import static UAW.Vars.tick;
 import static mindustry.Vars.tilesize;
