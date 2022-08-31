@@ -112,7 +112,7 @@ public class ACMBlock {
         }};                                
 
         whitess = new GenericCrafter("whitess"){{
-            requirements(Category.production, with(Items.copper, 30, Items.lead, 25));
+            requirements(Category.crafting, with(Items.copper, 30, Items.lead, 25));
             craftEffect = Fx.smeltsmoke;
             outputItem = new ItemStack(Items.silicon, 1);
             craftTime = 40f;
