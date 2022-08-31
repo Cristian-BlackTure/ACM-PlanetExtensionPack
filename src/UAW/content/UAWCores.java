@@ -77,7 +77,7 @@ public class UAWCores{
         coreIntel = new CoreBlock("core-intel"){{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
-            unitType = ACMUnitTypes.a1;
+            unitType = UnitTypes.gamma;
             health = 16000;
             itemCapacity = 23000;
             size = 4;
