@@ -36,7 +36,6 @@ import mindustry.world.blocks.logic.*;
 import mindustry.world.blocks.payloads.*;
 import mindustry.world.blocks.power.*;
 import mindustry.world.blocks.production.*;
-import mindustry.world.blocks.crafting.*;
 import mindustry.world.blocks.sandbox.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.units.*;
@@ -58,8 +57,7 @@ import mindustry.world.blocks.production.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.Attribute.*;
 import mindustry.world.blocks.production.AttributeCrafter.*;
-import UAW.world.meta.ACMAttribute.*;
-
+import mindustry.world.blocks.environment.OreBlock.*;
 
 import static UAW.Vars.tick;
 import static mindustry.Vars.tilesize;
@@ -69,7 +67,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, whitess;
+	steamdrill, statdrill, magneticdrill, whitess, h2d2ore;
     
 	public static void load(){
 
@@ -122,6 +120,12 @@ public class ACMBlock {
 
             consumeItems(with(Items.coal, 1, Items.sand, 2));
             consumePower(0.50f);
+        }};
+
+        h2d2ore = new OreBlock(Items.copper){{
+            oreDefault = false;
+            oreThreshold = 0.81f;
+            oreScale = 23.47619f;
         }};
 
         }
