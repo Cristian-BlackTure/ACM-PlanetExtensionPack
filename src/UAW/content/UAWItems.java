@@ -13,6 +13,7 @@ public class UAWItems {
 	public static void load() {
 		cryogel = new Item("item-cryogel", Color.valueOf("87ceeb")) {{
 			flammability = -10f;
+                        alwaysUnlocked = true;
 			explosiveness = 0f;
 		}};
 		anthracite = new Item("item-anthracite", Color.valueOf("272727")) {{
