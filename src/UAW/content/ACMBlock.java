@@ -66,7 +66,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, fieldProjector;
+	steamdrill, statdrill, magneticdrill;
     
 	public static void load(){
 
@@ -103,19 +103,6 @@ public class ACMBlock {
             researchCost = with(Items.titanium, 80, Items.graphite, 40, Items.silicon, 160);
             alwaysUnlocked = true;
 
-        }};                                
-        
-        fieldProjector = new BaseShield("field-projector"){{
-            requirements(Category.effect, with(items.copper, 1));
-
-            size = 3;
-            width = 50f;
-            length = 36;
-            shieldHealth = 1000f;
-            cooldownNormal = 3f;
-            cooldownBrokenBase = 0.35f;
-
-            consumePower(4f);
-        }};        
+        }};                                        
         }
         }
