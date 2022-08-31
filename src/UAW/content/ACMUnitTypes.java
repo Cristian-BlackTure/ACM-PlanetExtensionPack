@@ -272,7 +272,7 @@ public class ACMUnitTypes {
 		}};
             a1 = new UAWUnitType("a1"){{
             coreUnitDock = true;
-            controller = u -> new BuilderAI;
+            controller = u -> new BuilderAI(true);
             isEnemy = false;
             envDisabled = 0;
 
