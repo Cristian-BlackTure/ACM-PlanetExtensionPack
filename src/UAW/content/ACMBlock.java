@@ -77,6 +77,7 @@ public class ACMBlock {
             tier = 2;
             size = 2;
             researchCost = with(Items.copper, 20, Items.lead, 20);
+            alwaysUnlocked = true;
 
         }};    
 
@@ -88,6 +89,7 @@ public class ACMBlock {
             tier = 3;
             size = 2;
             researchCost = with(Items.copper, 80, Items.graphite, 40, Items.silicon, 160);
+            alwaysUnlocked = true;
 
         }};
         
@@ -99,6 +101,7 @@ public class ACMBlock {
             tier = 4;
             size = 3;
             researchCost = with(Items.titanium, 80, Items.graphite, 40, Items.silicon, 160);
+            alwaysUnlocked = true;
 
         }};                                
         }
