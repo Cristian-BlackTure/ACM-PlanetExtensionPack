@@ -9,7 +9,7 @@ public class ACMAttribute{
     public static ObjectMap<String, ACMAttribute> map = new ObjectMap<>();
 
     /** Heat content. Used for thermal generator yield. */
-    public static final Attribute
+    public static final ACMAttribute
     heat = add("heat"),
     /** Virus Type Blocc */
     h2d2 = add("h2d2"),
