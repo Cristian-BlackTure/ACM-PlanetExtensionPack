@@ -24,12 +24,12 @@ import arc.graphics.Color;
 
 public class UAWItems {
 	public static Item placeholder,
-		cryogel, anthracite, compositeAlloy, dieselCore;
+		cryogel, anthracite, compositeAlloy, dieselCore, h2;
 
 	public static void load() {
 		cryogel = new Item("item-cryogel", Color.valueOf("87ceeb")) {{
 			flammability = -10f;
-                        alwaysUnlocked = true;
+                        alwaysUnlocked = false;
 			explosiveness = 0f;
 		}};
 		anthracite = new Item("item-anthracite", Color.valueOf("272727")) {{
@@ -39,6 +39,11 @@ public class UAWItems {
 		}};
 		compositeAlloy = new Item("item-composite-alloy", UAWPal.compAlloyMid) {{
 			cost = 2.5f;
+		}};
+		h2 = new Item("item-h2", Color.valueOf("ffffff")) {{
+			flammability = 10f;
+                        alwaysUnlocked = true;
+			explosiveness = 7382f;
 		}};
 	}
 }
