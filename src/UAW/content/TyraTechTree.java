@@ -20,8 +20,8 @@ public class TyraTechTree{
             node(UAWCores.coreIntel, () -> {
 
                 node(ACMBlock.steamdrill, () -> {
-                    node(router, () -> {
-                        node(launchPad, Seq.with(new SectorComplete(extractionOutpost)), () -> {
+                    node(ACMBlock.statdrill, () -> {
+                        node(ACMBlock.magneticdrill, () -> {
                           
                           });
                           });
