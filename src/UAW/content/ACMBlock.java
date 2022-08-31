@@ -123,7 +123,7 @@ public class ACMBlock {
             consumePower(0.50f);
         }};
 
-        h2d2ore = new OreBlock(UAWItems.h2){{
+        h2d2ore = new OreBlock(ore-h2d2ore){{
             oreDefault = false;
             oreThreshold = 0.81f;
             oreScale = 23.47619f;
