@@ -6,10 +6,10 @@ import mindustry.type.Item;
 import UAW.content.ACMBlock.*;
 
 public class UAWItems {
-	public static Item,
+	public static Item placeholder,
 		cryogel, anthracite, compositeAlloy, dieselCore;
 
-    public static final Seq<Item> UAWItems = new Seq<>()
+    public static final Seq<Item> UAWItems = new Seq<>();
 
 
 	public static void load() {
