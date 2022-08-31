@@ -51,10 +51,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill;
-    
-    // crafting
-    steamgenerator, h2d2harvester;
+	steamdrill, statdrill, magneticdrill, steamgenerator, h2d2harvester;
     
 	public static void load(){
 
@@ -91,7 +88,7 @@ public class ACMBlock {
         }};
         
         steamgenerator = new GenericCrafter("steamgenerator"){{
-            requirements(Category.crafting, with(Items.copper, 65, Items.silicon, 40, Items.lead, 30));
+            requirements(Category.production, with(Items.copper, 65, Items.silicon, 40, Items.lead, 30));
             outputLiquid = new LiquidStack(UAWLiquids.steam, 12f / 60f);
             size = 2;
             hasPower = true;
