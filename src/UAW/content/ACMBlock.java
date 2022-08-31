@@ -66,7 +66,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill;
+	steamdrill, statdrill, magneticdrill, fieldProjector;
     
 	public static void load(){
 
@@ -105,7 +105,7 @@ public class ACMBlock {
 
         }};                                
         
-        FieldProjector = new BaseShield("field-projector"){{
+        fieldProjector = new BaseShield("field-projector"){{
             requirements(Category.effect, with(items.copper, 1));
 
             size = 3;
