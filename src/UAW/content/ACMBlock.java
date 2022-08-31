@@ -52,7 +52,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, steamgenerator, h2d2harvester;
+	steamdrill, statdrill, magneticdrill;
     
 	public static void load(){
 
@@ -86,53 +86,6 @@ public class ACMBlock {
             size = 3;
             researchCost = with(Items.titanium, 80, Items.graphite, 40, Items.silicon, 160);
 
-        }};
-        
-        steamgenerator = new GenericCrafter("steamgenerator"){{
-            requirements(Category.production, with(Items.copper, 65, Items.silicon, 40, Items.lead, 30));
-            outputLiquid = new LiquidStack(UAWLiquids.steam, 12f / 60f);
-            size = 2;
-            hasPower = true;
-            hasItems = false;
-            hasLiquids = true;
-            rotate = false;
-            solid = true;
-            outputsLiquid = true;
-            envEnabled = Env.any;
-            drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(UAWLiquids.steam){{drawLiquidLight = true;}}, new DrawDefault());
-            liquidCapacity = 24f;
-            craftTime = 120;
-
-            consumePower(2.05f);
-            consumeLiquid(Liquids.water, 12f / 60f);
-        }};
-        
-        h2d2harvester = new AttributeCrafter("h2d2harvester"){{
-            requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
-            outputItem = new ItemStack(Items.sporePod, 1);
-            craftTime = 200;
-            size = 2;
-            hasLiquids = true;
-            hasPower = true;
-            hasItems = true;
-
-            craftEffect = Fx.none;
-            envRequired |= UAWEnv.h2d2;
-            attribute = Attribute.spores;
-
-            legacyReadWarmup = true;
-            drawer = new DrawMulti(
-            new DrawRegion("-bottom"),
-            new DrawLiquidTile(UAWLiquids.steam),
-            new DrawDefault(),
-            new DrawCultivator(),
-            new DrawRegion("-top")
-            );
-            maxBoost = 2f;
-
-            consumePower(80f / 60f);
-            consumeLiquid(UAWLiquids.steam, 18f / 60f);
-        }};      
-        
+        }};                                
         }
         }
