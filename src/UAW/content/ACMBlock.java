@@ -58,6 +58,7 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.Attribute.*;
 import mindustry.world.blocks.production.AttributeCrafter.*;
 import mindustry.world.blocks.environment.OreBlock.*;
+import UAW.content.UAWItems.*;
 
 import static UAW.Vars.tick;
 import static mindustry.Vars.tilesize;
@@ -109,7 +110,7 @@ public class ACMBlock {
         whitess = new GenericCrafter("whitess"){{
             requirements(Category.crafting, with(Items.copper, 30, Items.lead, 25));
             craftEffect = Fx.smeltsmoke;
-            outputItem = new ItemStack(Items.silicon, 1);
+            outputItem = new ItemStack(UAWItems.h2, 1);
             craftTime = 40f;
             size = 2;
             hasPower = true;
@@ -122,7 +123,7 @@ public class ACMBlock {
             consumePower(0.50f);
         }};
 
-        h2d2ore = new OreBlock(Items.copper){{
+        h2d2ore = new OreBlock(UAWItems.h2){{
             oreDefault = false;
             oreThreshold = 0.81f;
             oreScale = 23.47619f;
