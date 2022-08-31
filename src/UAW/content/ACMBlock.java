@@ -55,7 +55,9 @@ import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.production.*;
 import mindustry.world.draw.*;
-import mindustry.world.meta.Attribute;
+import mindustry.world.meta.Attribute.*;
+import mindustry.world.blocks.production.AttributeCrafter.*;
+import UAW.world.meta.ACMAttribute.*;
 
 
 import static UAW.Vars.tick;
@@ -66,14 +68,14 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill;
+	steamdrill, statdrill, magneticdrill, whitedrill;
     
 	public static void load(){
 
         steamdrill = new Drill("steamdrill"){{
             requirements(Category.production, with(Items.copper, 40, Items.lead, 40));
 
-            drillTime = 160f;
+            drillTime = 320f;
             tier = 2;
             size = 2;
             researchCost = with(Items.copper, 20, Items.lead, 20);
@@ -85,7 +87,7 @@ public class ACMBlock {
             requirements(Category.production, with(Items.copper, 40, Items.silicon, 20, Items.graphite, 20));
             consumePower(0.15f);
             // i am here to consume you dreeaaam
-            drillTime = 160f;
+            drillTime = 120f;
             tier = 3;
             size = 2;
             researchCost = with(Items.copper, 80, Items.graphite, 40, Items.silicon, 160);
@@ -103,6 +105,33 @@ public class ACMBlock {
             researchCost = with(Items.titanium, 80, Items.graphite, 40, Items.silicon, 160);
             alwaysUnlocked = true;
 
-        }};                                        
+        }};                                
+        
+         cultivator = new AttributeCrafter("cultivator"){{
+            requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
+            outputItem = new ItemStack(Items.sporePod, 1);
+            craftTime = 100;
+            size = 2;
+            hasLiquids = true;
+            hasPower = true;
+            hasItems = true;
+
+            craftEffect = Fx.none;
+            envRequired |= UAWEnv.h2d2;
+            attribute = ACMAttribute.h2d2;
+
+            legacyReadWarmup = true;
+            drawer = new DrawMulti(
+            new DrawRegion("-bottom"),
+            new DrawLiquidTile(Liquids.water),
+            new DrawDefault(),
+            new DrawCultivator(),
+            new DrawRegion("-top")
+            );
+            maxBoost = 2f;
+
+            consumePower(80f / 60f);
+            consumeLiquid(UAWLiquids.steam, 18f / 60f);
+        }};       
         }
         }
