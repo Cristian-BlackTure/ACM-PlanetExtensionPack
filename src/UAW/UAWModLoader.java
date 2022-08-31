@@ -19,7 +19,6 @@ public class UAWModLoader extends Mod {
                 UAWCores.load();
                 ACMLoadouts.load();
                 ACMUnitTypes.load();
-                TyraTechTree.load();
 	}
 
 	@Override
