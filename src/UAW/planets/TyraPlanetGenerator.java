@@ -421,7 +421,7 @@ public class TyraPlanetGenerator extends PlanetGenerator{
         }
 
         if(Simplex.noise3d(seed, 2, 0.5, scl, sector.tile.v.x + 2, sector.tile.v.y, sector.tile.v.z)*nmag + poles > 0.7f*addscl){
-            ores.add(Blocks.oreThorium);
+            ores.add(Blocks.oreCoal);
         }
 
         if(rand.chance(0.25)){
