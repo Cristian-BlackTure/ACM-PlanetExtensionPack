@@ -122,7 +122,7 @@ public class ACMBlock {
 			));
 			size = 5;
 			squareSprite = true;
-			tileRequirement = Blocks.snow;
+			tileRequirement = Blocks.oreThorium;
 			drilledItem = UAWItems.h2;
 			tier = 7;
 			itemCapacity = 25;
