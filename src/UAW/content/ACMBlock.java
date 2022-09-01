@@ -68,7 +68,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, whitess, h2d2ore;
+	steamdrill, statdrill, magneticdrill;
     
 	public static void load(){
 
@@ -106,28 +106,5 @@ public class ACMBlock {
             alwaysUnlocked = true;
 
         }};                                
-
-        whitess = new GenericCrafter("whitess"){{
-            requirements(Category.crafting, with(Items.copper, 30, Items.lead, 25));
-            craftEffect = Fx.smeltsmoke;
-            outputItem = new ItemStack(UAWItems.h2, 1);
-            craftTime = 40f;
-            size = 2;
-            hasPower = true;
-            hasLiquids = false;
-            drawer = new DrawMulti(new DrawDefault(), new DrawFlame(Color.valueOf("ffef99")));
-            ambientSound = Sounds.smelter;
-            ambientSoundVolume = 0.07f;
-
-            consumeItems(with(Items.coal, 1, Items.sand, 2));
-            consumePower(0.50f);
-        }};
-
-        h2d2ore = new OreBlock(h2d2ore){{
-            oreDefault = false;
-            oreThreshold = 0.81f;
-            oreScale = 23.47619f;
-        }};
-
         }
         }
