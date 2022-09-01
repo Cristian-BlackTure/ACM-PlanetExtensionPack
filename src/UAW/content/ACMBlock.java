@@ -120,9 +120,9 @@ public class ACMBlock {
 				Items.graphite, 40,
 				Items.silicon, 30
 			));
-			size = 3;
+			size = 5;
 			squareSprite = true;
-			tileRequirement = Blocks.oreThorium;
+			tileRequirement = Blocks.snow;
 			drilledItem = UAWItems.h2;
 			tier = 7;
 			itemCapacity = 25;
@@ -138,6 +138,5 @@ public class ACMBlock {
 			updateEffect = UAWFx.steamCloud(4);
 			consumeLiquid(UAWLiquids.steam, 0.5f);
 		}};
-                                
         }
         }
