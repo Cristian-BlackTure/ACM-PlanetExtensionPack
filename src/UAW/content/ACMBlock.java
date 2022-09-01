@@ -68,7 +68,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill;
+	steamdrill, statdrill, magneticdrill, oreH2d2;
     
 	public static void load(){
 
