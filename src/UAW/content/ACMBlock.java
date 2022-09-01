@@ -68,7 +68,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, oreH2d2;
+	steamdrill, statdrill, magneticdrill, oreH2d2, h2d2drill;
     
 	public static void load(){
 
@@ -112,6 +112,32 @@ public class ACMBlock {
             oreThreshold = 0.913f;
             oreDefault = true;
         }};
+
+		h2d2drill = new ThumperDrill("h2d2drill") {{
+			requirements(Category.production, with(
+				Items.copper, 55,
+				Items.lead, 45,
+				Items.graphite, 40,
+				Items.silicon, 30
+			));
+			size = 3;
+			squareSprite = true;
+			tileRequirement = Blocks.oreThorium;
+			drilledItem = UAWItems.h2;
+			tier = 7;
+			itemCapacity = 25;
+			drillTime = 550;
+			warmupSpeed = 0.001f;
+			hasLiquids = true;
+			drawRim = true;
+			liquidCapacity = 90f;
+			drillEffect = new MultiEffect(
+				Fx.mineBig,
+				Fx.oily
+			);
+			updateEffect = UAWFx.steamCloud(4);
+			consumeLiquid(UAWLiquids.steam, 0.5f);
+		}};
                                 
         }
         }
