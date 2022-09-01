@@ -105,6 +105,13 @@ public class ACMBlock {
             researchCost = with(Items.titanium, 80, Items.graphite, 40, Items.silicon, 160);
             alwaysUnlocked = true;
 
-        }};                                
+        }};
+
+        oreH2d2 = new OreBlock(UAWItems.h2){{
+            oreScale = 24.77f;
+            oreThreshold = 0.913f;
+            oreDefault = true;
+        }};
+                                
         }
         }
