@@ -149,6 +149,7 @@ public class ACMBlock {
             outputItem = new ItemStack(Items.plastanium, 24);
             size = 2;
             health = 320;
+            itemCapacity = 48;
             hasPower = hasLiquids = true;
             craftEffect = Fx.formsmoke;
             updateEffect = Fx.plasticburn;
