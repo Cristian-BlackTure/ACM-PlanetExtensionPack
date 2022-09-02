@@ -160,5 +160,25 @@ public class ACMBlock {
             consumeItem(Items.titanium, 8);
         }};
 
+        phaseCompressor = new GenericCrafter("phasecompressor"){{
+            requirements(Category.production, with(Items.silicon, 80, Items.lead, 115, Items.graphite, 60, Items.titanium, 80));
+            alwaysUnlocked = true;
+            hasItems = true;
+            liquidCapacity = 60f;
+            craftTime = 60f;
+            outputItem = new ItemStack(Items.phaseFabric, 24);
+            size = 2;
+            health = 320;
+            itemCapacity = 48;
+            hasPower = hasLiquids = true;
+            craftEffect = Fx.formsmoke;
+            updateEffect = Fx.plasticburn;
+            drawer = new DrawMulti(new DrawDefault(), new DrawFade());
+
+            consumeLiquid(Liquids.oil, 0.05f);
+            consumePower(2f);
+            consumeItem(Items.thorium, 8, UAWItems.h2);
+        }};
+
         }
         }
