@@ -218,7 +218,7 @@ public class ACMBlock {
                 new UnitType[]{UnitTypes.crawler, UnitTypes.toxopid},
                 new UnitType[]{UnitTypes.dagger, UnitTypes.reign},
                 new UnitType[]{UnitTypes.mono, UnitTypes.oct},
-                new UnitType[]{UnitTypes.novo, UnitTypes.corvus}
+                new UnitType[]{UnitTypes.nova, UnitTypes.corvus}
             );
         }};
 
