@@ -206,6 +206,7 @@ public class ACMBlock {
             requirements(Category.units, with(Items.lead, 4000, Items.silicon, 3000, Items.thorium, 1000, Items.plastanium, 600, Items.phaseFabric, 600, Items.surgeAlloy, 800));
 
             size = 9;
+            alwaysUnlocked = true;
             consumePower(25f);
             consumeItems(with(Items.silicon, 1000, Items.plastanium, 600, Items.surgeAlloy, 500, Items.phaseFabric, 350));
             consumeLiquid(Liquids.cryofluid, 1.5f);
