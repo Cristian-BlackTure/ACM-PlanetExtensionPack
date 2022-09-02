@@ -68,7 +68,7 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, oreH2d2, h2d2drill, plastCompressor, phaseCompressor;
+	steamdrill, statdrill, magneticdrill, oreH2d2, h2d2drill, plastCompressor, phaseCompressor, steamgen;
     
 	public static void load(){
 
@@ -177,7 +177,26 @@ public class ACMBlock {
 
             consumeLiquid(Liquids.oil, 0.05f);
             consumePower(2f);
-            consumeItem(Items.thorium, 8, UAWItems.h2);
+            consumeItem(Items.thorium, 8, UAWItems.h2, 8);
+        }};
+
+        steamgen = new GenericCrafter("steamgen"){{
+            requirements(Category.production, with(Items.lead, 65, Items.silicon, 40, Items.titanium, 60));
+            outputLiquid = new LiquidStack(UAWLiquids.steam, 12f / 60f);
+            size = 2;
+            hasPower = true;
+            alwaysUnlocked = true;
+            hasLiquids = true;
+            rotate = false;
+            solid = true;
+            outputsLiquid = true;
+            envEnabled = Env.any;
+            drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(Liquids.cryofluid){{drawLiquidLight = true;}}, new DrawDefault());
+            liquidCapacity = 48f;
+            craftTime = 60;
+
+            consumePower(1f);
+            consumeLiquid(Liquids.water, 12f / 60f);
         }};
 
         }
