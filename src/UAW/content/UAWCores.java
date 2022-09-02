@@ -78,13 +78,13 @@ public class UAWCores{
             requirements(Category.effect, with(Items.copper, 8000, Items.lead, 8000, Items.silicon, 5000, Items.thorium, 4000));
 
             unitType = UnitTypes.gamma;
-            health = 16000;
-            itemCapacity = 23000;
+            alwaysUnlocked = true;
+            health = 36000;
+            itemCapacity = 230000;
             size = 4;
             thrusterLength = 40/4f;
 
             unitCapModifier = 24;
-            researchCostMultiplier = 0.11f;
         }};
     }
 }
