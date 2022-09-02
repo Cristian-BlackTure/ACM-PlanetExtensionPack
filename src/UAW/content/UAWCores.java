@@ -81,7 +81,7 @@ public class UAWCores{
             alwaysUnlocked = true;
             health = 36000;
             itemCapacity = 230000;
-            size = 4;
+            size = 5;
             thrusterLength = 40/4f;
 
             unitCapModifier = 24;
