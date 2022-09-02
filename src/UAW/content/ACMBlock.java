@@ -68,7 +68,10 @@ import static mindustry.type.ItemStack.with;
 public class ACMBlock {
 	public static Block placeholder,
 	// production
-	steamdrill, statdrill, magneticdrill, oreH2d2, h2d2drill, plastCompressor, phaseCompressor, steamgen;
+	steamdrill, statdrill, magneticdrill, oreH2d2, h2d2drill, plastCompressor, phaseCompressor, steamgen,
+       
+        // units
+        allreconstructor;
     
 	public static void load(){
 
@@ -197,6 +200,26 @@ public class ACMBlock {
 
             consumePower(1f);
             consumeLiquid(Liquids.water, 12f / 60f);
+        }};
+
+        allreconstructor = new Reconstructor("allreconstructor"){{
+            requirements(Category.units, with(Items.lead, 4000, Items.silicon, 3000, Items.thorium, 1000, Items.plastanium, 600, Items.phaseFabric, 600, Items.surgeAlloy, 800));
+
+            size = 9;
+            consumePower(25f);
+            consumeItems(with(Items.silicon, 1000, Items.plastanium, 600, Items.surgeAlloy, 500, Items.phaseFabric, 350));
+            consumeLiquid(Liquids.cryofluid, 1.5f);
+
+            constructTime = 60f * 60f * 4;
+            liquidCapacity = 180f;
+
+            upgrades.addAll(
+                new UnitType[]{UnitTypes.flare, UnitTypes.eclipse},
+                new UnitType[]{UnitTypes.crawler, UnitTypes.toxopid},
+                new UnitType[]{UnitTypes.dagger, UnitTypes.reign},
+                new UnitType[]{UnitTypes.mono, UnitTypes.oct},
+                new UnitType[]{UnitTypes.novo, UnitTypes.corvus}
+            );
         }};
 
         }
