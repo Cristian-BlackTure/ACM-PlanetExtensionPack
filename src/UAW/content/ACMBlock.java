@@ -177,7 +177,7 @@ public class ACMBlock {
 
             consumeLiquid(Liquids.oil, 0.05f);
             consumePower(2f);
-            consumeItem(Items.thorium, 8, UAWItems.h2, 8);
+            consumeItem(UAWItems.h2, 8);
         }};
 
         steamgen = new GenericCrafter("steamgen"){{
